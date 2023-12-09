@@ -13,8 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * 	字符过滤器
- * 	@author Mingyue
- *
  */
 import javax.servlet.*;
 import java.io.IOException;

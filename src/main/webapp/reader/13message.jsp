@@ -23,6 +23,7 @@
 //	alert(date);//2017-01-22 11:08:46
 //	$('#date_info').val(today);
 //})
+
 </script>
 		<div class="rain">
 			<div class="border start">

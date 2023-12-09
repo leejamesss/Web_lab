@@ -17,8 +17,6 @@ import net.sf.json.JSONObject;
 
 /**
  * 管理员登录
- * 
- * @author Mingyue
  *
  */
 @WebServlet("/adminLogin")

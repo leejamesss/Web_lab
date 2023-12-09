@@ -15,7 +15,6 @@ import javax.servlet.http.HttpSession;
 
 /**
  * 系统管理员过滤
- * @author Mingyue
  *
  */
 public class AdminFilter implements Filter {
