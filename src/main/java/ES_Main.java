@@ -46,3 +46,13 @@
 //
 //    }
 //}
+
+
+public class ES_Main {
+    public static void main(String[] args) {
+        String template = "{role:\"user\",content:`你好，%s`}";
+        String parameter = "张三";
+        String json = String.format(template, parameter);
+        System.out.println(json);
+    }
+}
