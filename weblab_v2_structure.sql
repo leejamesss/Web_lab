@@ -211,15 +211,15 @@ CREATE TABLE `leave(tq)`  (
 -- ----------------------------
 -- Table structure for library
 -- ----------------------------
-DROP TABLE IF EXISTS `library`;
-CREATE TABLE `library`  (
-  `Lno` int NOT NULL AUTO_INCREMENT,
-  `Location` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
-  `Cooperation_time` datetime NULL DEFAULT NULL,
-  `Lname` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
-  `introduction` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
-  PRIMARY KEY (`Lno`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = Dynamic;
+-- DROP TABLE IF EXISTS `library`;
+-- CREATE TABLE `library`  (
+--   `Lno` int NOT NULL AUTO_INCREMENT,
+--   `Location` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+--   `Cooperation_time` datetime NULL DEFAULT NULL,
+--   `Lname` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+--   `introduction` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+--   PRIMARY KEY (`Lno`) USING BTREE
+-- ) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for manager
