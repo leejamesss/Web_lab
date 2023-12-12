@@ -1,6 +1,6 @@
 -- auto-generated definition
 create role teacher;
-grant student
+grant student 
 to teacher;
 grant SELECT,UPDATE,DROP,INSERT
     ON TABLE lib.questions
