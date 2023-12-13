@@ -38,14 +38,13 @@
 			<li role="presentation"><a href="09couse.jsp" target="view_frame"><span class="glyphicon glyphicon-file" aria-hidden="true">&nbsp;课程查询</span></a></li>
 			<li role="presentation"><a href="12rules.jsp" target="view_frame"><span class="glyphicon glyphicon-bell" aria-hidden="true">&nbsp;读者规则</span></a></li>
 			<li role="presentation"><a href="07announcement.jsp" target="view_frame"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true">&nbsp;查看公告</span></a></li>
-			<li role="presentation"><a href="index.jsp" target="view_frame"><span class="glyphicon glyphicon-list-alt" aria-hidden="true">&nbsp;个人信息</span></a></li>
-			<li role="presentation"><a href="06borrow.jsp" target="view_frame"><span class="glyphicon glyphicon-book" aria-hidden="true">&nbsp;借阅信息</span></a></li>
+
+			<li role="presentation"><a href="16mine.html" target="view_frame"><span class="glyphicon glyphicon-list-alt" aria-hidden="true">&nbsp;我的空间</span></a></li>
 			<li role="presentation"><a href="08illegalInfo.jsp" target="view_frame"><span class="glyphicon glyphicon-remove" aria-hidden="true">&nbsp;违章信息</span></a></li>
 			<li role="presentation"><a href="13message.jsp" target="view_frame"><span class="glyphicon glyphicon-pencil" aria-hidden="true">&nbsp;读者留言</span></a></li>
 			<li role="presentation"><a href="17friend.jsp" target="view_frame"><span class="glyphicon glyphicon-user" aria-hidden="true">&nbsp;我的好友</span></a></li>
-			<li role="presentation"><a href="18recommend.jsp" target="view_frame"><span class="glyphicon glyphicon-heart" aria-hidden="true">&nbsp;猜你喜欢</span></a></li>
+<%--			<li role="presentation"><a href="18recommend.jsp" target="view_frame"><span class="glyphicon glyphicon-heart" aria-hidden="true">&nbsp;猜你喜欢</span></a></li>--%>
 			<li role="presentation"><a href="10reDirect.jsp" target="view_frame"><span class="glyphicon glyphicon-tower" aria-hidden="true">&nbsp;智能出题</span></a></li>
-			<li role="presentation"><a href="19collection.jsp" target="view_frame"><span class="glyphicon glyphicon-star" aria-hidden="true">&nbsp;我的收藏</span></a></li>
 		<%
 			}else{ 
 		%>

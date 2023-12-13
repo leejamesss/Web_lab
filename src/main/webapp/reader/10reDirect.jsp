@@ -8,7 +8,7 @@
 </head>
 <body>
 <%
-  response.sendRedirect("https://hm2myg-5173.csb.app/#/");
+  response.sendRedirect("http://localhost:5173/#/");
 %>
 </body>
 </html>
