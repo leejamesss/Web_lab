@@ -45,6 +45,9 @@
 			<li role="presentation"><a href="17friend.jsp" target="view_frame"><span class="glyphicon glyphicon-user" aria-hidden="true">&nbsp;我的好友</span></a></li>
 <%--			<li role="presentation"><a href="18recommend.jsp" target="view_frame"><span class="glyphicon glyphicon-heart" aria-hidden="true">&nbsp;猜你喜欢</span></a></li>--%>
 			<li role="presentation"><a href="10reDirect.jsp" target="view_frame"><span class="glyphicon glyphicon-tower" aria-hidden="true">&nbsp;智能出题</span></a></li>
+
+
+
 		<%
 			}else{ 
 		%>

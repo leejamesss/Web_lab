@@ -12,6 +12,13 @@
 <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+    <style>
+        #video-container {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 <style>
 .showCarousel  .carousel-inner > .item > img {
 
@@ -32,8 +39,61 @@ font{
 	margin-bottom:10%;
 }
 </style>
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+    }
+
+    .fade-in {
+      animation: fadeIn 1s forwards;
+    }
+
+    .fade-out {
+      animation: fadeOut 1s forwards;
+    }
+  </style>
 </head>
 <body>
+
+<div id="video-container">
+    <video src="digital_human_long.mp4" autoplay></video>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const videoContainer = document.getElementById("video-container");
+      if (videoContainer) {
+        videoContainer.style.display = "block";
+        videoContainer.classList.add("fade-in");
+      }
+
+    const video = document.querySelector("video");
+    video.addEventListener("ended", function() {
+      video.pause();
+      videoContainer.style.display = "none";
+      videoContainer.classList.add("fade-out");
+
+      const home = document.getElementById("carousel-example-generic");
+      home.style.display = "block";
+      home.classList.add("fade-in");
+    });
+    });
+
+</script>
 <%
 	if(session.getAttribute("reader")!=null && session.getAttribute("reader_first")!=null &&session.getAttribute("reader_first").equals("1")){
 		session.setAttribute("reader_first", "2");
