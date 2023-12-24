@@ -9,6 +9,13 @@
 <title></title>
 
 
+<!-- 引入Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/slick.css" rel="stylesheet">
+	<link href="css/robot.css" rel="stylesheet">
+	<link href="js/swiper.css" rel="stylesheet">
+
 
 <!-- Bootstrap -->
 <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -16,50 +23,92 @@
 	<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+
 <style>
-.sidebar li a:hover{
-	background:#337ab7;
-	color:white;
-} 
-.faq-tabbable li a:focus{
-	background:skyblue;
-	color:white;
-} 
-</style>
+/* 隐藏子菜单并设置为绝对定位 */
+.sub {
+    display: none;
+    position: absolute;
+    left: 100%; /* Position to the right of the parent li */
+    top: 0; /* Align with the top of the parent li */
+    width: 200px; /* Set a width for the submenu */
+    background-color: white; /* Add a background color for visibility */
+}
+
+/* 当鼠标悬停在li元素上时，显示子菜单 */
+li:hover .sub {
+    display: block;
+}
+	</style>
 
 </head>
+
 <body>
 
-	<div style="text-align:center;width:100%;height:100%;font-size：20px;">
-		<ul class="nav nav-pills nav-stacked nav-inverse sidebar faq-tabbable">
-		<% if(session.getAttribute("reader")!=null){%>
-			<li role="presentation"><a href="01main.jsp" target="view_frame"><span class="glyphicon glyphicon-home" aria-hidden="true">&nbsp;首页</span></a></li>
-			<li role="presentation"><a href="05book.jsp" target="view_frame"><span class="glyphicon glyphicon-search" aria-hidden="true">&nbsp;图书查询</span></a></li>
-			<li role="presentation"><a href="09couse.jsp" target="view_frame"><span class="glyphicon glyphicon-file" aria-hidden="true">&nbsp;课程查询</span></a></li>
-			<li role="presentation"><a href="12rules.jsp" target="view_frame"><span class="glyphicon glyphicon-bell" aria-hidden="true">&nbsp;读者规则</span></a></li>
-			<li role="presentation"><a href="07announcement.jsp" target="view_frame"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true">&nbsp;查看公告</span></a></li>
-
-			<li role="presentation"><a href="16mine.html" target="view_frame"><span class="glyphicon glyphicon-list-alt" aria-hidden="true">&nbsp;我的空间</span></a></li>
-			<li role="presentation"><a href="08illegalInfo.jsp" target="view_frame"><span class="glyphicon glyphicon-remove" aria-hidden="true">&nbsp;违章信息</span></a></li>
-			<li role="presentation"><a href="13message.jsp" target="view_frame"><span class="glyphicon glyphicon-pencil" aria-hidden="true">&nbsp;读者留言</span></a></li>
-			<li role="presentation"><a href="17friend.jsp" target="view_frame"><span class="glyphicon glyphicon-user" aria-hidden="true">&nbsp;我的好友</span></a></li>
-<%--			<li role="presentation"><a href="18recommend.jsp" target="view_frame"><span class="glyphicon glyphicon-heart" aria-hidden="true">&nbsp;猜你喜欢</span></a></li>--%>
-			<li role="presentation"><a href="10reDirect.jsp" target="view_frame"><span class="glyphicon glyphicon-tower" aria-hidden="true">&nbsp;智能出题</span></a></li>
-
-
-
-		<%
-			}else{ 
-		%>
-			<li role="presentation"><a href="01main.jsp" target="view_frame"><span class="glyphicon glyphicon-home" aria-hidden="true">&nbsp;首页</span></a></li>
-			<li role="presentation"><a href="05book.jsp" target="view_frame"><span class="glyphicon glyphicon-search" aria-hidden="true">&nbsp;图书查询</span></a></li>
-			<li role="presentation"><a href="12rules.jsp" target="view_frame"><span class="glyphicon glyphicon-bell" aria-hidden="true">&nbsp;读者规则</span></a></li>
-			<li role="presentation"><a href="07announcement.jsp" target="view_frame"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true">&nbsp;查看公告</span></a></li>
-			<li role="presentation"><a href="15checkMessage.jsp" target="view_frame"><span class="glyphicon glyphicon-envelope" aria-hidden="true">&nbsp;查看留言</span></a></li>
-			<%
-			}
-			%>
-		</ul>
+<div class="snav">
+	<div class="close"></div>
+	<div class="hd-menu">
 	</div>
+	
+	<div class="snav-menu"></div>
+	<ul>
+		<li>
+			<a href="01main.jsp" target="view_frame" class="v1">查看首页</a>
+		</li>
+		<li>
+			<a href="05book.jsp" target="view_frame" class="v1">图书查询</a>
+
+		</li>
+		<li>
+			<a href="09couse.jsp" target="view_frame" class="v1">课程查询</a>
+
+		</li>
+		<li>
+			<a href="12rules.jsp" target="view_frame" class="v1">读者规则</a>
+
+		</li>
+		<li>
+			<a href="07announcement.jsp" target="view_frame" class="v1">查看公告</a>
+		</li>
+
+		<li>
+			<a href="13message.jsp" target="view_frame" class="v1">读者留言</a>
+		</li>
+		
+		<% if(session.getAttribute("reader")!=null){ %>
+		<li>
+			<a href="16mine.html" target="view_frame" class="v1">我的空间</a>
+			<dl class="sub">
+				<dd><a href="16achievement.jsp" target="view_frame">我的成就</a></dd>
+				<dd><a href="16like.jsp" target="view_frame">我的收藏</a></dd>
+				<dd><a href="index.jsp" target="view_frame">我的账号</a></dd>
+				<dd><a href="06borrow.jsp" target="view_frame">我的借阅</a></dd>
+				<dd><a href="17friend.jsp" target="view_frame">我的好友</a></dd>
+			</dl>
+		</li>
+
+		<li>
+			<a href="08illegalInfo.jsp" target="view_frame" class="v1">违章信息</a>
+		</li>
+
+		<li>
+			<a href="10reDirect.jsp" target="view_frame" class="v1">智能出题</a>
+		</li>
+
+		<!-- 18recommend.jsp -->
+		<!-- <li>
+			<a href="18recommend.jsp" target="view_frame" class="v1">猜你喜欢</a>
+		</li> -->
+		<% } %>
+
+	</ul>
+</div>
+
+<script src="js/lib.js"></script>
+<script src="js/count.js"></script>
+<script src="js/index.js"></script>
+<script src="js/js.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+
 </body>
 </html>

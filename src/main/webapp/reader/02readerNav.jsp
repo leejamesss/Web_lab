@@ -14,8 +14,26 @@
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <style>
+	.navbar {
+		background-color: lightskyblue;
+		/* Change the background color */
+		color: #fff;
+		/* Change the text color */
+		border: none; /* Remove the border */
+		/* text-align: center; Center the text */
+	
+	}
+	.navbar a {
+    color: #fff; /* Change the text color of the links to white */
+	
 
+}
+	.navbar-right a {
+    color: #fff !important; /* Change the text color，important */
+    font-weight: bold; /* Make the text bold */
+}
 </style>
+
 </head>
 <body>
 	<nav class="navbar navbar-inverse" role="navigation">
@@ -28,13 +46,15 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
      			</button>
-				<a class="navbar-brand" href="#">北京大学图书馆</a>
+				<a style="color:#fff; font-weight:bold;" class="navbar-brand" href="#">北京大学图书馆
+				</a>
+
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 <%--			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">--%>
 <%--				<ul class="nav navbar-nav">--%>
-<%--        			<li><p style="margin-top:25%;color:grey;">我的图书馆<span class="sr-only">(current)</span></p></li>--%>
+<%--        			<li><p style="margin-top:25%;color:#fff;font-weight:bold">我的图书馆<span class="sr-only">(current)</span></p></li>--%>
 <%--				</ul>--%>
 				
 				
@@ -47,9 +67,9 @@
          				<%} %>
         			</a></li>
 				    <%if(session.getAttribute("reader") !=null) {%>
-					<li><a href="./exit" target="_parent">退出</a></li>
+					<li><a style="color:#fff;font-weight:bold;" href="./exit" target="_parent">退出</a></li>
 					<%}else{%>
-					<li><a href="04readerFrame.jsp" target="_parent" onClick="">登录</a></li>	
+					<li><a style="color:#fff;font-weight:bold;" href="04readerFrame.jsp" target="_parent" onClick="">登录</a></li>	
 					<%}
 					%>
 					

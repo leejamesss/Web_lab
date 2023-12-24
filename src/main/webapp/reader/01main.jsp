@@ -20,15 +20,29 @@
         }
     </style>
 <style>
-.showCarousel  .carousel-inner > .item > img {
 
-    display: block;
-    width:100%;
-    height:620px;
-}
 .showCarousel{
-	margin-top:2%;
+	/* margin-top:2%; */
+    position: fixed; /* Fix the position */
+    top: 0; /* Align with the top of the page */
+    left: 0; /* Align with the left of the page */
+    width: 100%; /* Set the width to 100% of the page */
+    height: 100%; /* Set the height to 100% of the page */
+    z-index: -1; /* Place the carousel behind other content */
 }
+.showCarousel .carousel-inner,
+.showCarousel .carousel-inner > .item {
+    height: 100%; /* Set the height to 100% */
+}
+
+.showCarousel .carousel-inner > .item > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 font{
 	font-size:40px;
 	color:black;
@@ -65,6 +79,23 @@ font{
     .fade-out {
       animation: fadeOut 1s forwards;
     }
+
+#video-container {
+    position: fixed; /* Fix the position */
+    top: 0; /* Align with the top of the page */
+    left: 0; /* Align with the left of the page */
+    width: 100%; /* Set the width to 100% of the page */
+    height: 100%; /* Set the height to 100% of the page */
+    z-index: 9999;
+
+}
+
+#video-container video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scale the video to cover the container */
+}
   </style>
 </head>
 <body>
@@ -132,7 +163,7 @@ font{
 	<div class="item">
       <img src="../public/image/3.jpg" alt="...">
       <div class="carousel-caption">
-		<font style="color:white;">书之岁华 新展宏图</font>
+		<font style="color:white;">钩沉拾遗 再探百年</font>
       </div>
     </div>
   </div>
