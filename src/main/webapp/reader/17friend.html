@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/friend-style.css" />
+    <link rel="stylesheet" href="./css/friend.vars.css" />
+
+    <style>
+      a,
+      button,
+      input,
+      select,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      * {
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-decoration: none;
+        appearance: none;
+        background: none;
+
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
+    <title>我的好友</title>
+  </head>
+  <body>
+    <div class="frame-2">
+      <div class="rectangle"></div>
+      <div class="rectangle2"></div>
+      <div class="div">可能感兴趣的人</div>
+      <div class="rectangle3"></div>
+      <div class="rectangle4"></div>
+      <div class="rectangle5"></div>
+      <div class="rectangle6"></div>
+      <div class="rectangle7"></div>
+      <div class="rectangle8"></div>
+      <div class="rectangle9"></div>
+      <div class="rectangle10"></div>
+      <div class="image"></div>
+      <div class="image2"></div>
+      <div class="rectangle11"></div>
+      <div class="rectangle12"></div>
+      <div class="rectangle13"></div>
+      <div class="rectangle14"></div>
+      <img class="image-3" src="./images/image-30.png"  alt=""/>
+      <div class="rectangle15"></div>
+      <div class="rectangle16"></div>
+      <div class="rectangle17"></div>
+      <img class="image-1" src="./images/image-10.png"  alt=""/>
+      <div class="rectangle18"></div>
+      <img class="image-2" src="./images/image-20.png"  alt=""/>
+      <div class="rectangle19"></div>
+      <div class="avatar">
+        <svg
+          class="group"
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z"
+            fill="#5661B3"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M30.5 49.7305C40.7173 49.7305 30.5 43.2661 30.5 33.0488C30.5 22.8316 40.7173 12 30.5 12C20.2827 12 11.0391 20.648 11.0391 30.8652C11.0391 41.0825 20.2827 49.7305 30.5 49.7305Z"
+            fill="#F4E1E0"
+          />
+          <path
+            d="M31 42C37.0751 42 42 37.0751 42 31C42 24.9249 37.0751 20 31 20C24.9249 20 20 24.9249 20 31C20 37.0751 24.9249 42 31 42Z"
+            fill="#070707"
+          />
+        </svg>
+      </div>
+      <div class="rectangle20"></div>
+      <div class="div2">我的好友</div>
+      <div class="div3">添加新的好友</div>
+      <div class="div4">好友在读</div>
+      <div class="interrupted">Interrupted</div>
+      <div class="popeye-aug-2023">Popeye Aug 2023</div>
+      <div class="started">Started</div>
+      <div class="brutus-aug-2023">Brutus Aug 2023</div>
+      <div class="reading">Reading</div>
+      <div class="premium-4-2023">Premium 4 2023</div>
+      <div class="finished">Finished</div>
+      <div class="_1805010219">1805010219</div>
+      <div class="_2021">2021年加入</div>
+      <div class="rectangle21"></div>
+      <div class="on-line">
+        <span>
+          <span class="on-line-span"></span>
+          <span class="on-line-span2"></span>
+          <span class="on-line-span3">在线 on-line</span>
+        </span>
+      </div>
+      <svg
+        class="vector"
+        width="18"
+        height="10"
+        viewBox="0 0 18 10"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M16.1947 0.211503L8.69475 7.524L1.19475 0.211503C1.05425 0.0710031 0.89025 0.000752953 0.70275 0.000752953C0.51525 0.000752953 0.35125 0.0710031 0.21075 0.211503C0.0702501 0.352003 0 0.516003 0 0.703503C0 0.891003 0.0625 1.04725 0.1875 1.17225L8.1795 8.9535C8.32 9.094 8.492 9.16425 8.6955 9.16425C8.899 9.16425 9.071 9.094 9.2115 8.9535L17.2035 1.1955C17.3285 1.055 17.391 0.887003 17.391 0.691503C17.391 0.496003 17.3207 0.332003 17.1802 0.199503C17.0397 0.0670032 16.8757 0.00050265 16.6882 2.65017e-06C16.5007 -0.00049735 16.3367 0.0697528 16.1962 0.210753L16.1947 0.211503Z"
+          fill="#303133"
+        />
+      </svg>
+
+      <div class="rectangle-4"></div>
+      <div class="avatar2">
+        <svg
+          class="group6"
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z"
+            fill="#5661B3"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M30.5 49.7305C40.7173 49.7305 30.5 43.2661 30.5 33.0488C30.5 22.8316 40.7173 12 30.5 12C20.2827 12 11.0391 20.648 11.0391 30.8652C11.0391 41.0825 20.2827 49.7305 30.5 49.7305Z"
+            fill="#F4E1E0"
+          />
+          <path
+            d="M31 42C37.0751 42 42 37.0751 42 31C42 24.9249 37.0751 20 31 20C24.9249 20 20 24.9249 20 31C20 37.0751 24.9249 42 31 42Z"
+            fill="#070707"
+          />
+        </svg>
+      </div>
+      <div class="_18050102192">1805010219</div>
+      <div class="div5">在线</div>
+      <div class="rectangle-10"></div>
+      <div class="avatar3">
+        <svg
+          class="group11"
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z"
+            fill="#5661B3"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M30.5 49.7305C40.7173 49.7305 30.5 43.2661 30.5 33.0488C30.5 22.8316 40.7173 12 30.5 12C20.2827 12 11.0391 20.648 11.0391 30.8652C11.0391 41.0825 20.2827 49.7305 30.5 49.7305Z"
+            fill="#F4E1E0"
+          />
+          <path
+            d="M31 42C37.0751 42 42 37.0751 42 31C42 24.9249 37.0751 20 31 20C24.9249 20 20 24.9249 20 31C20 37.0751 24.9249 42 31 42Z"
+            fill="#070707"
+          />
+        </svg>
+      </div>
+      <div class="_18050102193">1805010219</div>
+      <div class="_2">上次在线 2天前</div>
+      <div class="rectangle-11"></div>
+      <div class="avatar4">
+        <svg
+          class="group16"
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z"
+            fill="#5661B3"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M30.5 49.7305C40.7173 49.7305 30.5 43.2661 30.5 33.0488C30.5 22.8316 40.7173 12 30.5 12C20.2827 12 11.0391 20.648 11.0391 30.8652C11.0391 41.0825 20.2827 49.7305 30.5 49.7305Z"
+            fill="#F4E1E0"
+          />
+          <path
+            d="M31 42C37.0751 42 42 37.0751 42 31C42 24.9249 37.0751 20 31 20C24.9249 20 20 24.9249 20 31C20 37.0751 24.9249 42 31 42Z"
+            fill="#070707"
+          />
+        </svg>
+      </div>
+      <div class="_18050102194">1805010219</div>
+      <div class="_1">上次在线 1小时前</div>
+      <div class="rectangle-12"></div>
+      <div class="avatar5">
+        <svg
+          class="group21"
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z"
+            fill="#5661B3"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M30.5 49.7305C40.7173 49.7305 30.5 43.2661 30.5 33.0488C30.5 22.8316 40.7173 12 30.5 12C20.2827 12 11.0391 20.648 11.0391 30.8652C11.0391 41.0825 20.2827 49.7305 30.5 49.7305Z"
+            fill="#F4E1E0"
+          />
+          <path
+            d="M31 42C37.0751 42 42 37.0751 42 31C42 24.9249 37.0751 20 31 20C24.9249 20 20 24.9249 20 31C20 37.0751 24.9249 42 31 42Z"
+            fill="#070707"
+          />
+        </svg>
+      </div>
+      <div class="_18050102195">1805010219</div>
+      <div class="div6">上次在线 刚刚</div>
+      <div class="rectangle-8"></div>
+      <div class="avatar6">
+        <svg
+          class="group26"
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z"
+            fill="#5661B3"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M30.5 49.7305C40.7173 49.7305 30.5 43.2661 30.5 33.0488C30.5 22.8316 40.7173 12 30.5 12C20.2827 12 11.0391 20.648 11.0391 30.8652C11.0391 41.0825 20.2827 49.7305 30.5 49.7305Z"
+            fill="#F4E1E0"
+          />
+          <path
+            d="M31 42C37.0751 42 42 37.0751 42 31C42 24.9249 37.0751 20 31 20C24.9249 20 20 24.9249 20 31C20 37.0751 24.9249 42 31 42Z"
+            fill="#070707"
+          />
+        </svg>
+      </div>
+      <div class="_18050102196">1805010219</div>
+      <div class="div7">在线</div>
+      <div class="rectangle-9"></div>
+      <div class="avatar7">
+        <svg
+          class="group31"
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z"
+            fill="#5661B3"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M30.5 49.7305C40.7173 49.7305 30.5 43.2661 30.5 33.0488C30.5 22.8316 40.7173 12 30.5 12C20.2827 12 11.0391 20.648 11.0391 30.8652C11.0391 41.0825 20.2827 49.7305 30.5 49.7305Z"
+            fill="#F4E1E0"
+          />
+          <path
+            d="M31 42C37.0751 42 42 37.0751 42 31C42 24.9249 37.0751 20 31 20C24.9249 20 20 24.9249 20 31C20 37.0751 24.9249 42 31 42Z"
+            fill="#070707"
+          />
+        </svg>
+      </div>
+      <div class="_18050102197">1805010219</div>
+      <div class="div8">在线</div>
+      <div class="rectangle-16"></div>
+      <div class="avatar8">
+        <svg
+          class="group36"
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M60 120C93.1371 120 120 93.1371 120 60C120 26.8629 93.1371 0 60 0C26.8629 0 0 26.8629 0 60C0 93.1371 26.8629 120 60 120Z"
+            fill="#5661B3"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M61 99.4609C81.4345 99.4609 61 86.5322 61 66.0977C61 45.6631 81.4345 24 61 24C40.5655 24 22.0781 41.2959 22.0781 61.7305C22.0781 82.165 40.5655 99.4609 61 99.4609Z"
+            fill="#F4E1E0"
+          />
+          <path
+            d="M62 84C74.1503 84 84 74.1503 84 62C84 49.8497 74.1503 40 62 40C49.8497 40 40 49.8497 40 62C40 74.1503 49.8497 84 62 84Z"
+            fill="#070707"
+          />
+        </svg>
+      </div>
+      <div class="_18050102198">1805010219</div>
+      <div class="_20212">2021年加入</div>
+      <div class="rectangle-17"></div>
+      <div class="off-line">
+        <span>
+          <span class="off-line-span"></span>
+          <span class="off-line-span2"></span>
+          <span class="off-line-span3">离线 off-line</span>
+        </span>
+      </div>
+      <svg
+        class="vector2"
+        width="18"
+        height="10"
+        viewBox="0 0 18 10"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M16.1947 0.211503L8.69475 7.524L1.19475 0.211503C1.05425 0.0710031 0.89025 0.000752953 0.70275 0.000752953C0.51525 0.000752953 0.35125 0.0710031 0.21075 0.211503C0.0702501 0.352003 0 0.516003 0 0.703503C0 0.891003 0.0625 1.04725 0.1875 1.17225L8.1795 8.9535C8.32 9.094 8.492 9.16425 8.6955 9.16425C8.899 9.16425 9.071 9.094 9.2115 8.9535L17.2035 1.1955C17.3285 1.055 17.391 0.887003 17.391 0.691503C17.391 0.496003 17.3207 0.332003 17.1802 0.199503C17.0397 0.0670032 16.8757 0.00050265 16.6882 2.65017e-06C16.5007 -0.00049735 16.3367 0.0697528 16.1962 0.210753L16.1947 0.211503Z"
+          fill="#303133"
+        />
+      </svg>
+
+      <div class="rectangle-13"></div>
+      <div class="rectangle22"></div>
+      <div class="div9">搜 索</div>
+      <div class="rectangle23"></div>
+      <div class="div10">添 加</div>
+      <svg
+        class="rectangle-14"
+        width="108"
+        height="49"
+        viewBox="0 0 108 49"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M108 0H0V49H108V0Z" fill="#E3E3E3" />
+      </svg>
+
+      <svg
+        class="vector3"
+        width="21"
+        height="13"
+        viewBox="0 0 21 13"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18.6903 1.25001C18.3387 1.24907 18.0244 1.37157 17.7689 1.58589L17.7548 1.59294L17.6712 1.6745L10.6947 8.47652L3.7212 1.67731C3.44991 1.40784 3.10008 1.25075 2.70275 1.25075C2.30353 1.25075 1.95225 1.40935 1.68042 1.68117C1.40859 1.953 1.25 2.30428 1.25 2.7035C1.25 3.07652 1.38232 3.42774 1.65717 3.70258L1.65712 3.70263L1.6643 3.70962L9.6533 11.488C9.9376 11.7702 10.3004 11.9143 10.6955 11.9143C11.0904 11.9143 11.453 11.7703 11.7372 11.4884L19.7259 3.73365L19.7456 3.71453L19.7638 3.69402C20.0162 3.41036 20.141 3.06283 20.141 2.6915C20.141 2.29235 19.9877 1.93004 19.6948 1.65387C19.4202 1.39493 19.0746 1.25103 18.6903 1.25001Z"
+          fill="#6574CD"
+          stroke="#6574CD"
+          stroke-width="1.5"
+        />
+      </svg>
+
+      <div class="div11">昵称</div>
+      <div class="rectangle-15"></div>
+      <div class="rectangle-18"></div>
+      <div class="rectangle-19"></div>
+      <div class="rectangle-20"></div>
+      <div class="div12">北京 海淀</div>
+      <div class="_5">你们有 5 个共同好友</div>
+      <div class="avatar9">
+        <svg
+          class="group41"
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M60 120C93.1371 120 120 93.1371 120 60C120 26.8629 93.1371 0 60 0C26.8629 0 0 26.8629 0 60C0 93.1371 26.8629 120 60 120Z"
+            fill="#5661B3"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M61 99.4609C81.4345 99.4609 61 86.5322 61 66.0977C61 45.6631 81.4345 24 61 24C40.5655 24 22.0781 41.2959 22.0781 61.7305C22.0781 82.165 40.5655 99.4609 61 99.4609Z"
+            fill="#F4E1E0"
+          />
+          <path
+            d="M62 84C74.1503 84 84 74.1503 84 62C84 49.8497 74.1503 40 62 40C49.8497 40 40 49.8497 40 62C40 74.1503 49.8497 84 62 84Z"
+            fill="#070707"
+          />
+        </svg>
+      </div>
+      <div class="_18050102199">1805010219</div>
+      <div class="_20213">2021年加入</div>
+      <div class="rectangle24"></div>
+      <div class="div13">添 加</div>
+      <div class="rectangle-21"></div>
+      <div class="rectangle-22"></div>
+      <div class="div14">都在读《时间简史》</div>
+      <div class="_12">你们有 1 个共同好友</div>
+    </div>
+  </body>
+</html>
