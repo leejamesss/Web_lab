@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/SignUp-style.css" />
+    <script src="./js/jquery.min.js"></script>
+
+    <style>
+      a,
+      input,
+      select,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      * {
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-decoration: none;
+        appearance: none;
+        background: none;
+        pointer-events: none;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a,
+      input,
+      button {
+        outline: none;
+        pointer-events: all;
+      }
+    </style>
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="sign-up">
+      <div class="modal">
+        <div class="frame-2">
+          <div class="rectangle-1"></div>
+          <img
+            class="unsplash-ha-as-ke-zb-h-ac"
+            src="./public/image/unsplash-ha-as-ke-zb-h-ac0.png"
+           alt=""/>
+        </div>
+        <div class="group-11">
+          <div class="div">
+            <span>
+              <span class="div-span">已有账户？</span>
+              <span class="div-span2"></span>
+              <span class="div-span3"><a href="loginReader.html">点击登录</a></span>
+            </span>
+          </div>
+          <div class="group-9">
+            <button class="rectangle-5" name="button">
+              <script>
+                $("button").click(()=>{
+                  window.alert("注册成功！")
+                  window.location.href = "SignIn.html";
+                })
+              </script>
+            </button>
+            <div class="div2">创建账户</div>
+          </div>
+        </div>
+        <div class="group-13">
+          <div class="group-10">
+            <div class="hello-learner">Hello Learner !</div>
+            <div class="group-5">
+              <div class="password">
+                <div class="rectangle-4"></div>
+                <label>
+                  <input type="text" class="rectangle-4 input">
+                </label>
+                <svg
+                  class="eye-off"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_14)">
+                    <path
+                      d="M14.12 15.072C13.8454 15.3667 13.5141 15.6031 13.1462 15.7671C12.7782 15.9311 12.3809 16.0192 11.9781 16.0264C11.5753 16.0335 11.1752 15.9594 10.8016 15.8085C10.4281 15.6576 10.0887 15.433 9.80385 15.1481C9.51897 14.8633 9.29439 14.5239 9.14351 14.1504C8.99262 13.7768 8.91853 13.3767 8.92563 12.9739C8.93274 12.5711 9.02091 12.1738 9.18488 11.8058C9.34884 11.4378 9.58525 11.1066 9.88 10.832M17.94 18.892C16.2306 20.195 14.1491 20.9169 12 20.952C5 20.952 1 12.952 1 12.952C2.24389 10.6339 3.96914 8.6086 6.06 7.01199L17.94 18.892ZM9.9 5.19199C10.5883 5.03087 11.2931 4.95033 12 4.95199C19 4.95199 23 12.952 23 12.952C22.393 14.0876 21.6691 15.1567 20.84 16.142L9.9 5.19199Z"
+                      stroke="#00507C"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1 1.952L23 23.952"
+                      stroke="#00507C"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_14">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(0 0.951996)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+                <div class="group-3">
+                  <div class="div3">密码</div>
+                  <svg
+                    class="lock"
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19 11.952H5C3.89543 11.952 3 12.8474 3 13.952V20.952C3 22.0566 3.89543 22.952 5 22.952H19C20.1046 22.952 21 22.0566 21 20.952V13.952C21 12.8474 20.1046 11.952 19 11.952Z"
+                      stroke="#00507C"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7 11.952V7.952C7 6.62591 7.52678 5.35414 8.46447 4.41646C9.40215 3.47878 10.6739 2.952 12 2.952C13.3261 2.952 14.5979 3.47878 15.5355 4.41646C16.4732 5.35414 17 6.62591 17 7.952V11.952"
+                      stroke="#00507C"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="confirmed-password">
+                <div class="rectangle-4"></div>
+                <label>
+                  <input type="text" class="rectangle-4 input">
+                </label>
+                <svg
+                  class="eye-off2"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_103_234)">
+                    <path
+                      d="M14.12 15.048C13.8454 15.3427 13.5141 15.5791 13.1462 15.7431C12.7782 15.9071 12.3809 15.9952 11.9781 16.0023C11.5753 16.0094 11.1752 15.9353 10.8016 15.7845C10.4281 15.6336 10.0887 15.409 9.80385 15.1241C9.51897 14.8393 9.29439 14.4999 9.14351 14.1264C8.99262 13.7528 8.91853 13.3527 8.92563 12.9499C8.93274 12.5471 9.02091 12.1498 9.18488 11.7818C9.34884 11.4138 9.58525 11.0826 9.88 10.808M17.94 18.868C16.2306 20.171 14.1491 20.8928 12 20.928C5 20.928 1 12.928 1 12.928C2.24389 10.6099 3.96914 8.58458 6.06 6.98797L17.94 18.868ZM9.9 5.16797C10.5883 5.00685 11.2931 4.92631 12 4.92797C19 4.92797 23 12.928 23 12.928C22.393 14.0636 21.6691 15.1327 20.84 16.118L9.9 5.16797Z"
+                      stroke="#00507C"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1 1.92798L23 23.928"
+                      stroke="#00507C"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_103_234">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(0 0.927979)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+                <div class="group-4">
+                  <div class="div3">确认</div>
+                  <svg
+                    class="lock2"
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19 11.928H5C3.89543 11.928 3 12.8234 3 13.928V20.928C3 22.0325 3.89543 22.928 5 22.928H19C20.1046 22.928 21 22.0325 21 20.928V13.928C21 12.8234 20.1046 11.928 19 11.928Z"
+                      stroke="#00507C"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7 11.928V7.92798C7 6.6019 7.52678 5.33013 8.46447 4.39244C9.40215 3.45476 10.6739 2.92798 12 2.92798C13.3261 2.92798 14.5979 3.45476 15.5355 4.39244C16.4732 5.33013 17 6.6019 17 7.92798V11.928"
+                      stroke="#00507C"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="mail">
+                <div class="rectangle-3"></div>
+                <label>
+                  <input type="text" class="rectangle-3 input">
+                </label>
+                <div class="group-1">
+                  <div class="div3 email">邮箱</div>
+                  <svg
+                    class="mail2"
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 4.976H20C21.1 4.976 22 5.876 22 6.976V18.976C22 20.076 21.1 20.976 20 20.976H4C2.9 20.976 2 20.076 2 18.976V6.976C2 5.876 2.9 4.976 4 4.976Z"
+                      stroke="#00507C"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M22 6.976L12 13.976L2 6.976"
+                      stroke="#00507C"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="name">
+                <div class="rectangle-2"></div>
+                <label>
+                  <input type="text" class="rectangle-2 input">
+                </label>
+                <div class="group-3">
+                  <svg
+                    class="user"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                      stroke="#00507C"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                      stroke="#00507C"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <div class="div3">昵称</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ellipse-1"></div>
+      </div>
+    </div>
+  </body>
+</html>
