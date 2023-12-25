@@ -80,9 +80,9 @@ li:hover .sub {
 			<a href="16mine.html" target="view_frame" class="v1">我的空间</a>
 			<dl class="sub">
 				<dd><a href="16achievement.jsp" target="view_frame">我的成就</a></dd>
-				<dd><a href="16like.jsp" target="view_frame">我的收藏</a></dd>
+				<dd><a href="16collections.html" target="view_frame">我的收藏</a></dd>
 				<dd><a href="index.jsp" target="view_frame">我的账号</a></dd>
-				<dd><a href="06borrow.jsp" target="view_frame">我的借阅</a></dd>
+				<dd><a href="16borrow.html" target="view_frame">我的借阅</a></dd>
 				<dd><a href="17friend.jsp" target="view_frame">我的好友</a></dd>
 			</dl>
 		</li>
