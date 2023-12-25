@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>My Information</title>
+	<meta name="description"
+		content="A responsive web app template with common components like profile, list, tabs, menu views. Made for Codrops exclusively.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="output.css">
+	<link rel="stylesheet" href="node_modules/tippy.js/dist/themes/light.css">
+</head>
+
+<body class="bg-grey-lighter font-sans antialiased">
+	<!-- Main -->
+	<div class="flex">
+		<!-- Side Nav -->
+		<div class="flex" id="sidenav-categories-trigger">
+		</div>
+		<!-- Content -->
+		<div class="flex flex-1 flex-col md:px-6 pt-10" id="content">
+			<!-- Title -->
+			<div class="px-6 md:px-0 flex justify-between items-center -order-1">
+				<div>
+					<h1 class="font-normal">我的账号</h1>
+					<p class="text-grey-dark mt-2">Success is waking up in the morning,so excited about what you have to do.</p>
+				</div>
+				<button
+					class="bg-indigo-dark hover:bg-indigo-darker text-white text-sm py-2 px-4 rounded-full transition-normal hover:shadow hover:translate-y-1 active:translate-y-1 focus:outline-none">修改信息</button>
+			</div>
+			<!-- Desktop Stats -->
+			<div class="hidden px-6 md:px-0 mt-4 md:flex flex-wrap order-1 md:-order-1 md:shadow-md js-tab-pane"
+				id="section-stats">
+				<div class="p-4 px-6 w-full md:w-1/2 rounded md:rounded-r-none bg-white shadow-md md:shadow-none">
+					<h4>我的个人信息</h4>
+					<table class="mt-4 w-full">
+						
+						<tbody class="p-2 leading-loose text-sm">
+							<tr class="border-b">
+								<td class="py-2">我的姓名</td>
+								<td class="py-2 text-center">苏笪缕</td>
+							</tr>
+	
+							<tr class="border-b">
+								<td class="py-2">借阅证号</td>
+								<td class="py-2 text-center">1805010219</td>
+							</tr>
+							<tr class="border-b">
+								<td class="py-2">我的邮箱</td>
+								<td class="py-2 text-center">1805010219@stu.pku.edu.cn</td>
+							</tr>
+							<tr class="border-b">
+								<td class="py-2">规则编号</td>
+								<td class="py-2 text-center">1</td>
+							</tr>
+							<tr class="border-b">
+								<td class="py-2">证件状态</td>
+								<td class="py-2 text-center">挂失</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="p-4 px-6 w-full md:w-1/2 rounded md:rounded-r-none bg-white shadow-md md:shadow-none">
+					<h4>我的社交信息</h4>
+					<table class="mt-4 w-full">
+						
+						<tbody class="p-2 leading-loose text-sm">
+							<tr class="border-b">
+								<td class="py-2">我的头像</td>
+								<td><img src = "images/headimg.jpg" alt = "头像" align = "center" height = 130px width = 130px></img></td>
+							
+							</tr>
+							<tr class="border-b">
+								<td class="py-2">我的昵称</td>
+								<td class="py-2 text-center">是鱼丁糸啊</td>
+							</tr>
+	
+							<tr class="border-b">
+								<td class="py-2">个性签名</td>
+								<td class="py-2 text-center">我们通过对话认知世界。</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+					
+				
+			</div>
+		<!-- Filter -->
+			<div
+				class="px-6 md:px-0 flex items-baseline justify-between border-b-2 border-grey-light mt-6 order-0 lg:order-1">
+				<h4 class="hidden md:inline-block text-grey-dark font-normal">联系我们</h4>
+				<div>
+					<div class="inline-block md:hidden no-underline border-indigo pb-2 px-2 text-sm mr-2 text-indigo-darkest hover:cursor-pointer js-tab relative"
+						data-tab="section-stats">Stats</div>
+					
+					<div class="no-underline inline-block border-indigo pb-2 px-2 text-sm text-indigo-darkest hover:cursor-pointer js-tab relative"
+						data-tab="section-picks">其他平台</div>
+					<div class="no-underline inline-block border-indigo pb-2 px-2 text-sm mr-2 text-indigo-darkest hover:cursor-pointer js-tab active relative"
+						data-tab="section-library"> 邮箱与地址</div>
+				</div>
+			</div>
+			
+			<!-- Picks -->
+			<div class="hidden px-2 pt-2 md:px-0 flex-wrap order-2 pb-8 js-tab-pane active" id="section-picks">
+				<div class="flex justify-start items-center p-5 px-6 w-full sm:w-1/4">
+					<a href="https://github.com/leejamesss/Web_lab">
+					<img src="./images/github.jpg" alt="GitHub">
+					</a>
+				</div>
+				<div class="flex justify-start items-center p-5 px-6 w-full sm:w-1/4">
+					<img src="images/libraryimg.jpg" height = 120px width = 120px / alt ="微信公众号">
+					
+				</div>
+				<div class="flex justify-start items-center p-5 px-6 w-full sm:w-1/4">
+					<a href="http://weibo.com/pkulib1902/">
+					<img src="./images/libimg.jpg" height = 120px width = 120px /alt="官方微博" >
+					</a>
+				</div>
+				<div class="flex justify-start items-center p-5 px-6 w-full sm:w-1/4">
+					<a href="http://page.renren.com/601684575/">
+					<img src="./images/renren.jpg" height = 120px width = 120px /alt="人人网" >
+					</a>
+				</div>
+					  
+				 
+				
+				
+				
+
+
+
+
+			</div>
+			<!-- Library -->
+			<div class="hidden px-2 pt-2 md:px-0 flex-wrap order-2 pb-8 js-tab-pane active" id="section-library">
+				<table style="position:relative;left:15%;">
+					<tr>
+					<td style="width:250px;">版权所有©北京大学</td>
+					<td style="width:250px;">地址：北京市海淀区颐和园路5号</td>
+					</tr>
+					<tr>
+					<td style="width:250px;">邮编：100871 </td>
+					<td style="width:250px;">邮箱：its@pku.edu.cn</td>
+					</tr>
+					<tr>
+					<td style="width:250px;">电话：010-62751023</td>
+					<td style="width:250px;">支持：北京大学计算中心</td>
+					</tr>
+					</table>
+			</div>
+		</div>
+		
+		<!-- Profile -->
+		<div class="hidden absolute pin-b z-10 lg:relative lg:block w-full lg:w-1/5 bg-grey-lighter-2 px-6 pt-10"
+			id="profile">
+			<div class="flex items-center mb-6">
+				<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink" id="avatar">
+					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<g transform="translate(-1178.000000, -87.000000)">
+							<g transform="translate(1159.000000, 0.000000)">
+								<g transform="translate(0.000000, 87.000000)">
+									<g transform="translate(19.000000, 0.000000)">
+										<circle id="small-circle" fill="#5661B3" cx="30" cy="30" r="30"></circle>
+										<path id="moon"
+											d="M30.5,49.7304688 C40.7172679,49.7304688 30.5,43.266096 30.5,33.0488281 C30.5,22.8315603 40.7172679,12 30.5,12 C20.2827321,12 11.0390625,20.6479665 11.0390625,30.8652344 C11.0390625,41.0825022 20.2827321,49.7304688 30.5,49.7304688 Z"
+											fill="#F4E1E0"></path>
+										<circle id="big-circle" fill="#070707" cx="31" cy="31" r="11"></circle>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+				</svg>
+				<div class="ml-3">
+					<p>1805010219</p>
+					<p class="text-grey-dark mt-1 text-sm">2021年加入</p>
+				</div>
+			</div>
+			<div class="my-4 border-t pt-4">
+				<h3 class="text-indigo-dark font-normal">我们已经陪伴你走过 <strong>681</strong>天 的时光。</h3>
+				<div class="flex flex-wrap -ml-2 justify-start items-center">
+					<img src="./images/winter1.jpg" alt="winterview"
+						class="w-1/6 lg:w-1/4 max-w-tiny shadow-md block m-2 transition-normal hover:brighter">
+					<img src="./images/winter2.jpg" alt="winterview"
+						class="w-1/6 lg:w-1/4 max-w-tiny shadow-md block m-2 transition-normal hover:brighter">
+					<img src="./images/winter3.jpg" alt="winterview"
+						class="w-1/6 lg:w-1/4 max-w-tiny shadow-md block m-2 transition-normal hover:brighter">
+					
+				</div>
+			</div>
+			<div class="mt-6">
+				<p class="text-grey-dark mt-1 text-sm">上一次登录</p>
+				<div class="flex items-start mt-2">
+					<img src="./images/winter4.jpg" alt="winterview"
+						class="w-1/6 lg:w-1/5 max-w-tiny shadow-md block transition-normal hover:brighter">
+					<div class="ml-3">
+						<p class="mt-1 leading-normal">2023-12-24</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hidden p-4" id="popup">
+		<h3 class="font-medium">Popeye Aug 2023</h3>
+		<p class="text-sm mt-2 mb-3">Curabitur quis ut pharetra odio id, vitae eros eget tristique maecenas, ullamcorper
+			vitae.</p>
+		<div class="relative">
+			<select
+				class="block appearance-none w-full text-sm bg-white border border-grey-light hover:border-grey pl-3 py-1 pr-8 rounded shadow leading-normal focus:outline-none focus:shadow-outline"
+				id="tippy-select">
+				<option>Start</option>
+				<option>Started</option>
+				<option selected>Finished</option>
+			</select>
+			<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
+				<svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+					<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+				</svg>
+			</div>
+		</div>
+	</div>
+	<!-- Copyright &copy; 2023.Company name All rights reserved.<a target="_blank"
+		href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> -->
+
+	<script src="bundle.js" async defer></script>
+</body>
+
+</html>

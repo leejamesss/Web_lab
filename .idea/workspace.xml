@@ -9,10 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76e0d0e5-2b9a-4ca5-aa49-de8a999db5fc" name="Changes" comment="">
+    <list default="true" id="76e0d0e5-2b9a-4ca5-aa49-de8a999db5fc" name="Changes" comment="add my collections and my borrowing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/javabean/DBConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabean/DBConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/reader/03readerNavLeft.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/reader/03readerNavLeft.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/reader/16mine.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/reader/16mine.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/reader/images/test.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/reader/images/test.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,11 +184,35 @@
       <workItem from="1703417480463" duration="1890000" />
       <workItem from="1703422217012" duration="5477000" />
       <workItem from="1703468601143" duration="271000" />
-      <workItem from="1703471561046" duration="329000" />
+      <workItem from="1703471561046" duration="749000" />
+      <workItem from="1703473639165" duration="148000" />
+      <workItem from="1703486118455" duration="25000" />
+      <workItem from="1703511241690" duration="82000" />
     </task>
+    <task id="LOCAL-00001" summary="add my collections and my borrowing">
+      <option name="closed" value="true" />
+      <created>1703471926818</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703471926818</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add my collections and my borrowing">
+      <option name="closed" value="true" />
+      <created>1703472180404</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703472180404</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add my collections and my borrowing" />
+    <option name="LAST_COMMIT_MESSAGE" value="add my collections and my borrowing" />
   </component>
 </project>
