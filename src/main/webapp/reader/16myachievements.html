@@ -1,0 +1,214 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>My Collections</title>
+	<meta name="description"
+		content="A responsive web app template with common components like profile, list, tabs, menu views. Made for Codrops exclusively.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="output.css">
+	<link rel="stylesheet" href="node_modules/tippy.js/dist/themes/light.css">
+</head>
+
+<body class="bg-grey-lighter font-sans antialiased">
+	<!-- Main -->
+	<div class="flex">
+		<!-- Side Nav -->
+		<div class="flex" id="sidenav-categories-trigger">
+		</div>
+		<!-- Content -->
+		<div class="flex flex-1 flex-col md:px-6 pt-10" id="content">
+			<!-- Title -->
+			<div class="px-6 md:px-0 flex justify-between items-center -order-1">
+				<div>
+					<h1 class="font-normal">我的成就</h1>
+					<p class="text-grey-dark mt-2">我的奖章墙</p>
+				</div>
+				<button
+					class="bg-indigo-dark hover:bg-indigo-darker text-white text-sm py-2 px-4 rounded-full transition-normal hover:shadow hover:translate-y-1 active:translate-y-1 focus:outline-none">佩戴勋章</button>
+			</div>
+			<!-- Desktop Stats -->
+			<div class="hidden px-6 md:px-0 mt-4 md:flex flex-wrap order-1 md:-order-1 md:shadow-md js-tab-pane"
+				id="section-stats">
+				<div class="p-4 px-6 w-full md:w-1/4 rounded md:rounded-r-none bg-white shadow-md md:shadow-none">
+					<img src="./images/medal7.jpg" width = 100 px  height = 100px \alt="medal7">
+					<p class="text-indigo text-sm p-2"  >三日成就</p>
+					<p class="font-medium text-sm pl-2">连续三天登录</p>
+					
+				</div>
+				<div class="p-4 px-6 w-full md:w-1/4 rounded md:rounded-r-none bg-white shadow-md md:shadow-none">
+					<img src="./images/medal12.jpg" width = 100 px  height = 100px \alt="medal12">
+					<p class="text-indigo text-sm p-2"  >初出茅庐</p>
+					<p class="font-medium text-sm pl-2">做对第一道题</p>
+					
+				</div>
+				<div class="p-4 px-6 w-full md:w-1/4 rounded md:rounded-r-none bg-white shadow-md md:shadow-none">
+					<img src="./images/medal9.jpg" width = 100 px  height = 100px \alt="medal9">
+					<p class="text-indigo text-sm p-2"  >做题高手</p>
+					<p class="font-medium text-sm pl-2">做题数量超过100道</p>
+					
+				</div>
+				<div class="p-4 px-6 w-full md:w-1/4 rounded md:rounded-r-none bg-white shadow-md md:shadow-none">
+					<img src="./images/medal11.jpg" width = 100 px  height = 100px \alt="medal11">
+					<p class="text-indigo text-sm p-2"  >求问之星</p>
+					<p class="font-medium text-sm pl-2">发帖求问超过10次</p>
+					
+				</div>
+				<div class="p-4 px-6 w-full md:w-1/4 rounded md:rounded-r-none bg-white shadow-md md:shadow-none">
+					<img src="./images/medal4.jpg" width = 100 px  height = 100px \alt="medal4">
+					<p class="text-indigo text-sm p-2"  >交流之星</p>
+					<p class="font-medium text-sm pl-2">社区发帖超过20次</p>
+					
+				</div>
+				<div class="p-4 px-6 w-full md:w-1/4 rounded md:rounded-r-none bg-white shadow-md md:shadow-none">
+					<img src="./images/medal5.jpg" width = 100 px  height = 100px \alt="medal5">
+					<p class="text-indigo text-sm p-2"  >努力之星</p>
+					<p class="font-medium text-sm pl-2">连续一周练习题目</p>
+					
+				</div>
+				<div class="p-4 px-6 w-full md:w-1/4 rounded md:rounded-r-none bg-white shadow-md md:shadow-none">
+					<img src="./images/medal8.jpg" width = 100 px  height = 100px \alt="medal8">
+					<p class="text-indigo text-sm p-2"  >交友达人</p>
+					<p class="font-medium text-sm pl-2">成功加一位好友</p>
+					
+				</div>
+				
+				<div class="p-4 px-6 w-full md:w-1/4 rounded md:rounded-r-none bg-white shadow-md md:shadow-none">
+					<img src="./images/medal6.jpg" width = 100 px  height = 100px \alt="medal6">
+					<p class="text-indigo text-sm p-2"  >收藏宝箱</p>
+					<p class="font-medium text-sm pl-2">收藏超过10本图书</p>
+					
+				</div>
+				
+			</div>
+			<!-- Filter -->
+			<div
+				class="px-6 md:px-0 flex items-baseline justify-between border-b-2 border-grey-light mt-6 order-0 lg:order-1">
+				<h4 class="hidden md:inline-block text-grey-dark font-normal">我的成长图谱</h4>
+				<div>
+					<div class="inline-block md:hidden no-underline border-indigo pb-2 px-2 text-sm mr-2 text-indigo-darkest hover:cursor-pointer js-tab relative"
+						data-tab="section-stats">Stats</div>
+					<div class="no-underline inline-block border-indigo pb-2 px-2 text-sm mr-2 text-indigo-darkest hover:cursor-pointer js-tab active relative"
+						data-tab="section-library">能力领域雷达图 </div>
+					<div class="no-underline inline-block border-indigo pb-2 px-2 text-sm text-indigo-darkest hover:cursor-pointer js-tab relative"
+						data-tab="section-picks">我的成长曲线</div>
+				</div>
+			</div>
+			<!-- Library -->
+			<div class="hidden px-2 pt-2 md:px-0 flex-wrap order-2 pb-8 js-tab-pane active" id="section-library">
+				<div class="flex justify-start items-center p-5 px-6  w-full sm:w-1/2"
+					style="background-color:#D0E3E8;">
+					<img src="./images/raydar1.jpg" \alt="raydar1"></img>
+					<h4 class="hidden md:inline-block text-grey-dark font-normal">学科雷达图</h4>
+					
+				</div>
+				<div class="flex justify-start items-center p-5 px-6  w-full sm:w-1/2"
+					style="background-color:#D0E3E8;">
+					<img src="./images/raydar2.jpg" \alt="raydar2"></img>
+					
+					<h4 class="hidden md:inline-block text-grey-dark font-normal">能力雷达图</h4>
+						
+				</div>
+				
+			</div>
+			<!-- Picks -->
+			<div class="hidden flex-wrap order-2 pt-0 md:pt-6 md:pb-8 js-tab-pane" id="section-picks">
+				<div class="flex justify-start items-center p-5 px-6  w-full sm:w-1/2"
+					style="background-color:#D0E3E8;">
+					<img src="./images/bookgrowth.jpg" \alt="bookgrowth"></img>
+					<h4 class="hidden md:inline-block text-grey-dark font-normal">阅读成长曲线</h4>
+					
+				</div>
+				<div class="flex justify-start items-center p-5 px-6  w-full sm:w-1/2"
+					style="background-color:#D0E3E8;">
+					<img src="./images/questionsgrowth.jpg" \alt="questionsgrowth"></img>
+					
+					<h4 class="hidden md:inline-block text-grey-dark font-normal">测验成长曲线</h4>
+						
+				</div>
+				
+				
+				
+			</div>
+		</div>
+		<!-- Profile -->
+		<div class="hidden absolute pin-b z-10 lg:relative lg:block w-full lg:w-1/5 bg-grey-lighter-2 px-6 pt-10"
+			id="profile">
+			<div class="flex items-center mb-6">
+				<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink" id="avatar">
+					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<g transform="translate(-1178.000000, -87.000000)">
+							<g transform="translate(1159.000000, 0.000000)">
+								<g transform="translate(0.000000, 87.000000)">
+									<g transform="translate(19.000000, 0.000000)">
+										<circle id="small-circle" fill="#5661B3" cx="30" cy="30" r="30"></circle>
+										<path id="moon"
+											d="M30.5,49.7304688 C40.7172679,49.7304688 30.5,43.266096 30.5,33.0488281 C30.5,22.8315603 40.7172679,12 30.5,12 C20.2827321,12 11.0390625,20.6479665 11.0390625,30.8652344 C11.0390625,41.0825022 20.2827321,49.7304688 30.5,49.7304688 Z"
+											fill="#F4E1E0"></path>
+										<circle id="big-circle" fill="#070707" cx="31" cy="31" r="11"></circle>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+				</svg>
+				<div class="ml-3">
+					<p>1805010219</p>
+					<p class="text-grey-dark mt-1 text-sm">2021年加入</p>
+				</div>
+			</div>
+			<div class="my-4 border-t pt-4">
+				<div class="flex flex-wrap -ml-2 justify-start items-center">
+					<img src="./images/level.png" height = 100px width = 1000px \alt="level">
+				</div>
+				<h3 class="text-grey-dark mt-2" style = "text-align:right; ">9835/10800 </h3>
+				<h3 class="mt-1 leading-normal">距离下一级还差<strong>965</strong>经验值。期待你的成长！</h3>
+			</div>
+			<div class="mt-6">
+				<p class="text-grey-dark mt-1 text-sm">最近测验领域</p>
+				<div class="flex items-start mt-2">
+					<img src="./images/read-04.jpg" alt="read"
+						class="w-1/6 lg:w-1/5 max-w-tiny shadow-md block transition-normal hover:brighter">
+					<div class="ml-3">
+						<p class="mt-1 leading-normal">平面设计</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hidden p-4" id="popup">
+		<h3 class="font-medium">Popeye Aug 2023</h3>
+		<p class="text-sm mt-2 mb-3">Curabitur quis ut pharetra odio id, vitae eros eget tristique maecenas, ullamcorper
+			vitae.</p>
+		<div class="relative">
+			<select
+				class="block appearance-none w-full text-sm bg-white border border-grey-light hover:border-grey pl-3 py-1 pr-8 rounded shadow leading-normal focus:outline-none focus:shadow-outline"
+				id="tippy-select">
+				<option>Start</option>
+				<option>Started</option>
+				<option selected>Finished</option>
+			</select>
+			<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
+				<svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+					<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+				</svg>
+			</div>
+		</div>
+	</div>
+	<!-- Copyright &copy; 2023.Company name All rights reserved.<a target="_blank"
+		href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> -->
+
+	<script src="bundle.js" async defer></script>
+</body>
+
+</html>
