@@ -39,9 +39,17 @@ public class Book extends HttpServlet {
 		if (limit == null) {
 			limit = "10";
 		}
-		if (title != null && !title.isEmpty()) { // 新增的代码
+		// 如果title参数存在，清除titleSearched的session属性
+		if (title != null && !title.isEmpty()) {
+			req.getSession().removeAttribute("titleSearched");
+		}
+		// 检查是否已经按标题进行了搜索
+		if (req.getSession().getAttribute("titleSearched") == null && title != null && !title.isEmpty()) {
 			where = " where bname like '%" + title + "%' ";
 			flag = 0;
+			title = "";
+			// 设置session属性
+			req.getSession().setAttribute("titleSearched", true);
 		}
 		// 准备查询
 		Connection connection = null;
@@ -81,7 +89,11 @@ public class Book extends HttpServlet {
 			}
 			if (flag == 0) {
 				sql += where;
+				// title重置为空
+				title = "";
+				flag = 1;
 			}
+
 			sql += " limit ?,?";// 1 10 (1-1)*10
 			pstmt = connection.prepareStatement(sql);
 			pstmt.setInt(1, (Integer.parseInt(page) - 1) * Integer.parseInt(limit));

@@ -10,46 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76e0d0e5-2b9a-4ca5-aa49-de8a999db5fc" name="Changes" comment="add my collections and my borrowing">
-      <change beforePath="$PROJECT_DIR$/target/classes/javabean/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javabean/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javabean/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javabean/Base.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javabean/Common.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javabean/Common.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javabean/DBConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javabean/DBConstants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javabean/JDBCBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javabean/JDBCBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javabean/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javabean/Manager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javabean/Reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javabean/Reader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/BookAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/BookAdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/BookDel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/BookDel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/BookEdit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/BookEdit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/BorrowList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/BorrowList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/CardAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/CardAdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/CardDel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/CardDel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/CardEdit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/CardEdit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/CardList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/CardList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/LibraryData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/LibraryData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/ManagerAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/ManagerAdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/ManagerDel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/ManagerDel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/ManagerEdit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/ManagerEdit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/ManagerList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/ManagerList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/RuleAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/RuleAdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/RuleDel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/RuleDel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/RuleEdit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/RuleEdit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/RuleList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/RuleList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/SortAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/SortAdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/SortDel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/SortDel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/SortEdit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/SortEdit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/SortList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/SortList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/UpdatePassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/UpdatePassword.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/manager/Announcement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/manager/Announcement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/manager/AnnouncementAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/manager/AnnouncementAdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/manager/AnnouncementDel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/manager/AnnouncementDel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/manager/AnnouncementEdit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/manager/AnnouncementEdit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/manager/BorrowTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/manager/BorrowTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/manager/ReturnTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/manager/ReturnTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatTests" beforeDir="false" afterPath="$PROJECT_DIR$/chatTests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatTests/src/views/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/chatTests/src/views/home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/reader/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/reader/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/loginReader.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/loginReader.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/reader/04readerFrame.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/reader/04readerFrame.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/servlet/reader/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/reader/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/reader/Borrow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/reader/Borrow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/reader/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/reader/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/reader/Illegal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/reader/Illegal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/reader/Like.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/reader/Like.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/reader/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/reader/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library/WEB-INF/classes/servlet/reader/ReaderLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/library/WEB-INF/classes/servlet/reader/ReaderLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library/loginReader.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/library/loginReader.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library/reader/03readerNavLeft.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/library/reader/03readerNavLeft.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library/reader/04readerFrame.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/library/reader/04readerFrame.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,29 +64,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/HuaweiMoveData/Users/franc/Desktop/git/Web_lab/target",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "advanced.settings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/HuaweiMoveData/Users/franc/Desktop/git/Web_lab/target&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.83">
     <configuration name="16mine.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/library_war_exploded/reader/16mine.html">
       <method v="2" />
@@ -240,7 +212,8 @@
       <workItem from="1703473639165" duration="148000" />
       <workItem from="1703486118455" duration="25000" />
       <workItem from="1703511241690" duration="2128000" />
-      <workItem from="1703559393640" duration="16853000" />
+      <workItem from="1703559393640" duration="19167000" />
+      <workItem from="1703584568864" duration="770000" />
     </task>
     <task id="LOCAL-00001" summary="add my collections and my borrowing">
       <option name="closed" value="true" />

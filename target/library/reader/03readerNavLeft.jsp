@@ -92,9 +92,9 @@ li:hover .sub {
 			<a href="../community.html" target="view_frame" class="v1">交流讨论</a>
 		
 		</li>
-		<li>
+		<!-- <li>
 			<a href="08illegalInfo.jsp" target="view_frame" class="v1">违章信息</a>
-		</li>
+		</li> -->
 
 		<li>
 			<a href="10reDirect.jsp" target="view_frame" class="v1">智能出题</a>
