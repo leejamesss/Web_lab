@@ -55,15 +55,19 @@
             </span>
           </div>
           <div class="group-9">
-            <button class="rectangle-5" name="button">
-              <script>
+            <button class="rectangle-5" name="button" id="registerButton">创建账户</button>
+            
+            
+
+            <!-- <button class="rectangle-5" name="button" id = "registerButton"> -->
+              <!-- <script>
                 $("button").click(()=>{
                   window.alert("注册成功！")
-                  window.location.href = "SignIn.html";
+                  window.location.href = "loginReader.html";
                 })
-              </script>
-            </button>
-            <div class="div2">创建账户</div>
+              </script> -->
+            <!-- </button> -->
+            <!-- <div class="div2">创建账户</div> -->
           </div>
         </div>
         <div class="group-13">
@@ -113,7 +117,9 @@
 
                 <div class="group-3">
                   <div class="div3">密码</div>
+                  <input type="password" id="password" class="rectangle-4 input">
                   <svg
+                    id="togglePassword"
                     class="lock"
                     width="24"
                     height="25"
@@ -137,6 +143,16 @@
                     />
                   </svg>
                 </div>
+                      <script>
+                        const togglePassword = document.querySelector('#togglePassword');
+                        const password = document.querySelector('#password');
+
+                        togglePassword.addEventListener('click', function (e) {
+                          const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+                          password.setAttribute('type', type);
+                          this.classList.toggle('fa-eye-slash');
+                        });
+                      </script>
               </div>
               <div class="confirmed-password">
                 <div class="rectangle-4"></div>
@@ -181,7 +197,9 @@
 
                 <div class="group-4">
                   <div class="div3">确认</div>
+                  <input type="password" id="confirmPassword" class="rectangle-4 input">
                   <svg
+                    id="toggleConfirmPassword"
                     class="lock2"
                     width="24"
                     height="25"
@@ -205,11 +223,21 @@
                     />
                   </svg>
                 </div>
+                <script>
+                  const toggleConfirmPassword = document.querySelector('#toggleConfirmPassword');
+                  const confirmPassword = document.querySelector('#confirmPassword');
+
+                  toggleConfirmPassword.addEventListener('click', function (e) {
+                    const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+                    confirmPassword.setAttribute('type', type);
+                    this.classList.toggle('fa-eye-slash');
+                  });
+                </script>
               </div>
               <div class="mail">
                 <div class="rectangle-3"></div>
                 <label>
-                  <input type="text" class="rectangle-3 input">
+                  <input type="text" class="rectangle-3 input" id="email">
                 </label>
                 <div class="group-1">
                   <div class="div3 email">邮箱</div>
@@ -241,7 +269,7 @@
               <div class="name">
                 <div class="rectangle-2"></div>
                 <label>
-                  <input type="text" class="rectangle-2 input">
+                  <input type="text" class="rectangle-2 input" id="user">
                 </label>
                 <div class="group-3">
                   <svg
@@ -275,7 +303,45 @@
           </div>
         </div>
         <div class="ellipse-1"></div>
+       <script>
+        const registerButton = document.querySelector('#registerButton');
+
+        registerButton.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const user = document.querySelector('#user').value;
+          const psw = document.querySelector('#password').value;
+          const confirmPassword = document.querySelector('#confirmPassword').value;
+          const email = document.querySelector('#email').value;
+
+          if (psw !== confirmPassword) {
+            alert('密码和确认密码不匹配');
+            return;
+          }
+
+          fetch('/library_war_exploded/readerRegister', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: `user=${encodeURIComponent(user)}&psw=${encodeURIComponent(psw)}&email=${encodeURIComponent(email)}`,
+          })
+            .then(response => response.json())
+            .then(data => {
+              if (data.code === 0) {
+                alert('注册成功');
+                window.location.href = "loginReader.html";
+              } else {
+                alert('注册失败: ' + data.msg);
+              }
+            })
+            .catch((error) => {
+              console.error('Error:', error);
+            });
+        });
+      </script>
       </div>
     </div>
   </body>
+
 </html>

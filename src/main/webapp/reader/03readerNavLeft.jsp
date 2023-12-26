@@ -55,31 +55,27 @@ li:hover .sub {
 		<li>
 			<a href="01main.jsp" target="view_frame" class="v1">查看首页</a>
 		</li>
-		<li>
-			<a href="05book.jsp" target="view_frame" class="v1">图书查询</a>
 
-		</li>
 
 		<li>
-			<a href="../search.html" target="view_frame" class="v1">我要查询</a>
-				
+			<a href="../search.html" target="view_frame" class="v1">搜索查询</a>
+			<!-- <dl class="sub">
+				<dd><a href="09couse.jsp" target="view_frame">课程查询</a></dd>
+				<dd><a href="05book.jsp" target="view_frame">图书查询</a></dd>
+			</dl> -->
 		</li>
 
-		<li>
-			<a href="09couse.jsp" target="view_frame" class="v1">课程查询</a>
-
-		</li>
 		<li>
 			<a href="12rules.jsp" target="view_frame" class="v1">读者规则</a>
 
 		</li>
-		<li>
+		<!-- <li>
 			<a href="07announcement.jsp" target="view_frame" class="v1">查看公告</a>
-		</li>
+		</li> -->
 
-		<li>
+		<!-- <li>
 			<a href="13message.jsp" target="view_frame" class="v1">读者留言</a>
-		</li>
+		</li> -->
 		
 		<% if(session.getAttribute("reader")!=null){ %>
 		<li>
