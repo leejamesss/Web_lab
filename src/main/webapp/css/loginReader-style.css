@@ -13,8 +13,8 @@
   width: 1600px;
   height: 800px;
   position: absolute;
-  left: 141px;
-  top: 172px;
+  left: 160px;
+  top: 140px;
   box-shadow: 0px 0px 48px 0px rgba(0, 0, 0, 0.4);
   overflow: hidden;
 }
@@ -103,7 +103,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  font-family: "ËÎÌå", serif;
+  font-family: "Ã‹ÃŽÃŒÃ¥", serif;
   font-size: 24px;
   font-weight: 900;
   text-transform: lowercase;
