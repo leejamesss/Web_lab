@@ -40,7 +40,7 @@ public class Reader {
 
 		Connection connection = null;
 		PreparedStatement pstmt = null;
-		String sql = "insert into borrow_card (ID, PASSWORD, READER,RULE_ID,STATUS,EMAIL) values (?, ?, ?, ? ,?,?)";
+		String sql = "insert into borrow_card (ID, PASSWORD, READER,RULE_ID,STATUS,EMAIL) values (?, ?, ?, ? ,?, ?)";
 		connection = Base.getConnection();
 		pstmt = (PreparedStatement) connection.prepareStatement(sql);
 		Integer user_int = Integer.parseInt(user);

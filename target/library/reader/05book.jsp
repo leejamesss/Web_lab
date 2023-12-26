@@ -27,6 +27,12 @@
 	
 </head>
 <body>
+	<% String search=request.getParameter("search");
+		if(search==null){
+			search="";
+		}
+	 %>
+	
 	<jsp:useBean id="msg" scope="session" class="javabean.JDBCBean"></jsp:useBean>
 	<script src="../public/layui/layui.js" charset="utf-8"></script>
 	<!-- 表单 -->
@@ -67,6 +73,9 @@
 	    elem: '#cardTable'
 	    ,url:'./book'
 	    ,toolbar: '#headBar'
+		, where: { // your search parameter
+			  title: '<%= search %>'
+		  }
 	    ,cols: [[
 	      // {field:'id', width:120, title: '图书编号', sort: true}
 		  ,{field:'wherefrom',width: 120,title:'来源', sort: true}
@@ -85,7 +94,6 @@
 	    	//   return btns;
 	    	//   }
 	      // }
-
 
 			  ,{field:'introduction', minWidth:80, title: '简介'}
 		  ,{field:'price',minWidth: 80, title: '价格'}
