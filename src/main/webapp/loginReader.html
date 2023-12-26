@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/loginReader-style.css" />
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 
     <style>
       a,
@@ -55,12 +56,50 @@
             </span>
           </div>
           <div class="group-9">
-            <button class="rectangle-5">
+              <button class="rectangle-5">
+              <script src="./public/js/layer/layer.js"></script>
+
               <script>
-                $("button").click(()=>{
-                  window.alert("登录成功！")
-                  // window.location.href = "SignIn.html";
-                })
+                // 监听输入框的keypress事件
+                    $(".input").keypress(function (event) {
+                      // 如果按下的是回车键（键码为13）
+                      if (event.which == 13) {
+                        // 触发登录按钮的点击事件
+                        $("button").click();
+                      }
+                    });
+                $("button").click(function () {
+                  var nickname = $(".name .input").val();
+                  var password = $(".password .input").val();
+
+                  $.ajax({
+                    url: "./readerLogin", // 这里是后端登录接口
+                    type: "post",
+                    data: {
+                      user: nickname,
+                      psw: password
+                    },
+                    dataType: "json",
+                    success: function (data) {
+                      if (data.code == 0) {
+                        layer.msg("登录成功", { icon: 6, time: 1000 }, function () {
+                          location.href = data.url;
+                        })
+                      } else {
+                        layer.open({
+                          title: "登录失败",
+                          content: data.msg,
+                          icon: 5,
+                          anim: 6
+                        })
+                      }
+                    },
+                    error: function () {
+                      window.alert("网络错误，请稍后再试");
+                    }
+                  });
+                  return false;
+                });
               </script>
             </button>
             <div class="div2">登 录</div>
@@ -78,16 +117,9 @@
                 <div class="rectangle-6"></div>
                 <div class="rectangle-4"></div>
                 <label>
-                  <input type="text" class="rectangle-4 input">
+                  <input type="password" id="password" class="rectangle-4 input">
                 </label>
-                <svg
-                  class="eye-off"
-                  width="24"
-                  height="25"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+
                   <g clip-path="url(#clip0_1_14)">
                     <path
                       d="M14.12 14.725C13.8454 15.0197 13.5141 15.2561 13.1462 15.4201C12.7782 15.5841 12.3809 15.6722 11.9781 15.6793C11.5753 15.6864 11.1752 15.6123 10.8016 15.4615C10.4281 15.3106 10.0887 15.086 9.80385 14.8011C9.51897 14.5163 9.29439 14.1769 9.14351 13.8034C8.99262 13.4298 8.91853 13.0297 8.92563 12.6269C8.93274 12.2241 9.02091 11.8268 9.18488 11.4588C9.34884 11.0908 9.58525 10.7596 9.88 10.485M17.94 18.545C16.2306 19.848 14.1491 20.5698 12 20.605C5 20.605 1 12.605 1 12.605C2.24389 10.2869 3.96914 8.26158 6.06 6.66498L17.94 18.545ZM9.9 4.84497C10.5883 4.68385 11.2931 4.60331 12 4.60498C19 4.60498 23 12.605 23 12.605C22.393 13.7406 21.6691 14.8097 20.84 15.795L9.9 4.84497Z"
@@ -143,6 +175,19 @@
                   </svg>
                 </div>
               </div>
+       <script>
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', function (e) {
+          // toggle the type attribute
+          const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+          password.setAttribute('type', type);
+          // toggle the eye slash icon
+          this.classList.toggle('fa-eye-slash');
+        });
+      </script>
+
               <div class="name">
                 <div class="rectangle-2"></div>
                 <label>
@@ -173,7 +218,7 @@
                     />
                   </svg>
 
-                  <div class="div3">昵称</div>
+                  <div class="div3">账号</div>
                 </div>
               </div>
             </div>

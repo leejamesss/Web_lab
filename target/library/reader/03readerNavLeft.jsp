@@ -59,6 +59,12 @@ li:hover .sub {
 			<a href="05book.jsp" target="view_frame" class="v1">图书查询</a>
 
 		</li>
+
+		<li>
+			<a href="../search.html" target="view_frame" class="v1">我要查询</a>
+				
+		</li>
+
 		<li>
 			<a href="09couse.jsp" target="view_frame" class="v1">课程查询</a>
 
@@ -83,10 +89,13 @@ li:hover .sub {
 				<dd><a href="16collections.html" target="view_frame">我的收藏</a></dd>
 				<dd><a href="16myinformation.html" target="view_frame">我的账号</a></dd>
 				<dd><a href="16borrow.html" target="view_frame">我的借阅</a></dd>
-				<dd><a href="17friend.jsp" target="view_frame">我的好友</a></dd>
+				<dd><a href="17friend.html" target="view_frame">我的好友</a></dd>
 			</dl>
 		</li>
-
+		<li>
+			<a href="../community.html" target="view_frame" class="v1">讨论区</a>
+		
+		</li>
 		<li>
 			<a href="08illegalInfo.jsp" target="view_frame" class="v1">违章信息</a>
 		</li>
