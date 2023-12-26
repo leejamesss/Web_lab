@@ -58,7 +58,7 @@ li:hover .sub {
 
 
 		<li>
-			<a href="../search.html" target="view_frame" class="v1">搜索查询</a>
+			<a href="../search.html" target="view_frame" class="v1">未名搜索</a>
 			<!-- <dl class="sub">
 				<dd><a href="09couse.jsp" target="view_frame">课程查询</a></dd>
 				<dd><a href="05book.jsp" target="view_frame">图书查询</a></dd>
@@ -89,7 +89,7 @@ li:hover .sub {
 			</dl>
 		</li>
 		<li>
-			<a href="../community.html" target="view_frame" class="v1">讨论区</a>
+			<a href="../community.html" target="view_frame" class="v1">交流讨论</a>
 		
 		</li>
 		<li>

@@ -31,11 +31,17 @@ public class Book extends HttpServlet {
 		String condition = (String) req.getParameter("condition");
 		String conditionValue = (String) req.getParameter("conditionValue");
 		String where = ""; // 无限制条件
+		String title = (String) req.getParameter("title");
+		Integer flag = 1;
 		if (page == null) {
 			page = "1";
 		}
 		if (limit == null) {
 			limit = "10";
+		}
+		if (title != null && !title.isEmpty()) { // 新增的代码
+			where = " where bname like '%" + title + "%' ";
+			flag = 0;
 		}
 		// 准备查询
 		Connection connection = null;
@@ -54,22 +60,28 @@ public class Book extends HttpServlet {
 		JSONArray jsonArray = new JSONArray();
 		JSONObject jsonResult = new JSONObject();
 
+		// 进行查询
 
-
-//		 进行查询
 		try {
+
 			connection = (Connection) Base.getConnection();
 			sql = "select * from bookinfo ";
-			if (condition != "introduction" && condition != null && conditionValue != null && !condition.equals("") && !conditionValue.equals("")) {
-				where = " where " + condition + " like '%" + conditionValue + "%' ";
+			if (flag == 1) {
+				if (condition != "introduction" && condition != null && conditionValue != null && !condition.equals("")
+						&& !conditionValue.equals("")) {
+					where = " where " + condition + " like '%" + conditionValue + "%' ";
+					sql += where;
+				}
+
+				if (condition == "introduction" && condition != null && conditionValue != null && !condition.equals("")
+						&& !conditionValue.equals("")) {
+					where = " where Match (" + condition + ")  Against '*" + conditionValue + "*' in boolean mode";
+					sql += where;
+				}
+			}
+			if (flag == 0) {
 				sql += where;
 			}
-
-			if (condition == "introduction" && condition != null && conditionValue != null && !condition.equals("") && !conditionValue.equals("")) {
-				where = " where Match (" + condition + ")  Against '*" + conditionValue +  "*' in boolean mode";
-				sql += where;
-			}
-
 			sql += " limit ?,?";// 1 10 (1-1)*10
 			pstmt = connection.prepareStatement(sql);
 			pstmt.setInt(1, (Integer.parseInt(page) - 1) * Integer.parseInt(limit));
@@ -77,25 +89,25 @@ public class Book extends HttpServlet {
 			resultSet = pstmt.executeQuery();
 			while (resultSet.next()) {
 
-//				String library = resultSet.getString("library_id");
-//				String sql1 = "select * from library where ID =" + library;
-//				PreparedStatement pstmt1 = connection.prepareStatement(sql1);
-//				ResultSet rs1 = pstmt1.executeQuery();
-//				String lib = "";
-//				while (rs1.next()) {
-//					lib = rs1.getString("name");
-//				}
-//
-//				String sortid = resultSet.getString("sort_id");
-//				String sql2 = "select * from book_sort where ID =" + sortid;
-//				PreparedStatement pstmt2 = connection.prepareStatement(sql2);
-//				ResultSet rs2 = pstmt2.executeQuery();
-//				String sort = "";
-//				while (rs2.next()) {
-//					sort = rs2.getString("name");
-//				}
+				// String library = resultSet.getString("library_id");
+				// String sql1 = "select * from library where ID =" + library;
+				// PreparedStatement pstmt1 = connection.prepareStatement(sql1);
+				// ResultSet rs1 = pstmt1.executeQuery();
+				// String lib = "";
+				// while (rs1.next()) {
+				// lib = rs1.getString("name");
+				// }
+				//
+				// String sortid = resultSet.getString("sort_id");
+				// String sql2 = "select * from book_sort where ID =" + sortid;
+				// PreparedStatement pstmt2 = connection.prepareStatement(sql2);
+				// ResultSet rs2 = pstmt2.executeQuery();
+				// String sort = "";
+				// while (rs2.next()) {
+				// sort = rs2.getString("name");
+				// }
 
-//				jsonData.put("id", resultSet.getString("id"));
+				// jsonData.put("id", resultSet.getString("id"));
 				jsonData.put("wherefrom", resultSet.getString("wherefrom"));
 				jsonData.put("bname", resultSet.getString("bname"));
 				jsonData.put("person_in_charge", resultSet.getString("person_in_charge"));
@@ -110,11 +122,11 @@ public class Book extends HttpServlet {
 				jsonData.put("attachment", resultSet.getString("attachment"));
 				jsonData.put("series", resultSet.getString("series"));
 
-//				jsonData.put("library_id", lib);
-//				jsonData.put("sort_id", sort);
-//				jsonData.put("position", resultSet.getString("position"));
-//				jsonData.put("status", resultSet.getString("status"));
-//				jsonData.put("description", resultSet.getString("description"));
+				// jsonData.put("library_id", lib);
+				// jsonData.put("sort_id", sort);
+				// jsonData.put("position", resultSet.getString("position"));
+				// jsonData.put("status", resultSet.getString("status"));
+				// jsonData.put("description", resultSet.getString("description"));
 				jsonArray.add(jsonData);
 			}
 			countSql = "select count(*) as count from bookinfo ";
@@ -150,5 +162,5 @@ public class Book extends HttpServlet {
 		PrintWriter out = resp.getWriter();
 		out.print(jsonResult.toString());
 	}
-}
 
+}
