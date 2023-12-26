@@ -304,41 +304,47 @@
         </div>
         <div class="ellipse-1"></div>
        <script>
-        const registerButton = document.querySelector('#registerButton');
+  $('#registerButton').click(function (e) {
+    e.preventDefault();
 
-        registerButton.addEventListener('click', function (e) {
-          e.preventDefault();
+    var user = $('#user').val();
+    var psw = $('#password').val();
+    var confirmPassword = $('#confirmPassword').val();
+    var email = $('#email').val();
 
-          const user = document.querySelector('#user').value;
-          const psw = document.querySelector('#password').value;
-          const confirmPassword = document.querySelector('#confirmPassword').value;
-          const email = document.querySelector('#email').value;
+    if (!/^\d+$/.test(user)) {
+      alert('账号必须是数字');
+      return;
+    }
 
-          if (psw !== confirmPassword) {
-            alert('密码和确认密码不匹配');
-            return;
-          }
+    if (psw !== confirmPassword) {
+      alert('密码和确认密码不匹配');
+      return;
+    }
 
-          fetch('/library_war_exploded/readerRegister', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            body: `user=${encodeURIComponent(user)}&psw=${encodeURIComponent(psw)}&email=${encodeURIComponent(email)}`,
-          })
-            .then(response => response.json())
-            .then(data => {
-              if (data.code === 0) {
-                alert('注册成功');
-                window.location.href = "loginReader.html";
-              } else {
-                alert('注册失败: ' + data.msg);
-              }
-            })
-            .catch((error) => {
-              console.error('Error:', error);
-            });
-        });
+    $.ajax({
+      url: './readerRegister',
+      type: 'POST',
+      data: {
+        user: user,
+        psw: psw,
+        email: email
+      },
+      success: function (data) {
+        if (data.code === 0) {
+          alert('注册成功');
+          window.location.href = "loginReader.html";
+        } else {
+          alert('注册失败: ' + data.msg);
+        }
+      },
+      error: function (error) {
+        console.error('Error:', error);
+      }
+    });
+
+    return false;
+  });
       </script>
       </div>
     </div>

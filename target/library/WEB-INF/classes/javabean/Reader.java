@@ -36,16 +36,15 @@ public class Reader {
 			return "密码不能为空";
 		} else if (email == null || email.trim().equals("")) {
 			return "电子邮件不能为空";
-		} else if (!email.matches("^[\\w.-]+@[\\w.-]+\\.[a-z]{2,}$")) {
-			return "电子邮件格式不正确";
 		}
 
 		Connection connection = null;
 		PreparedStatement pstmt = null;
-		String sql = "insert into borrow_card (ID, PASSWORD, READER,RULE_ID,STATUS,EMAIL) values (?, ?, ?, ? ,?)";
+		String sql = "insert into borrow_card (ID, PASSWORD, READER,RULE_ID,STATUS,EMAIL) values (?, ?, ?, ? ,?,?)";
 		connection = Base.getConnection();
 		pstmt = (PreparedStatement) connection.prepareStatement(sql);
-		pstmt.setString(1, user);
+		Integer user_int = Integer.parseInt(user);
+		pstmt.setInt(1, user_int);
 		pstmt.setString(2, psw);
 		pstmt.setString(3, user);
 		pstmt.setInt(4, 1);
