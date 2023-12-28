@@ -13,67 +13,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatTests" beforeDir="false" afterPath="$PROJECT_DIR$/chatTests" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatTests/src/views/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/chatTests/src/views/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/admin/LibraryData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/admin/LibraryData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/reader/03readerNavLeft.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/reader/03readerNavLeft.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ES_Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ES_Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UserBasedCollaborativeFiltering.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UserBasedCollaborativeFiltering.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filter/AdminFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filter/AdminFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filter/CharacterEncodingFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filter/CharacterEncodingFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filter/ManagerFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filter/ManagerFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filter/XSSFilter$Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filter/XSSFilter$Request.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filter/XSSFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filter/XSSFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javabean/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javabean/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javabean/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javabean/Base.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javabean/Common.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javabean/Common.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javabean/CompareDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javabean/CompareDate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javabean/DBConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javabean/DBConstants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javabean/DateTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javabean/DateTime.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javabean/EndTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javabean/EndTime.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javabean/JDBCBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javabean/JDBCBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javabean/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javabean/Manager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javabean/Reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javabean/Reader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javabean/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javabean/Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/AdminLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/AdminLogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/BookAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/BookAdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/BookDel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/BookDel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/BookEdit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/BookEdit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/BookList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/BookList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/BorrowList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/BorrowList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/CardAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/CardAdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/CardDel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/CardDel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/CardEdit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/CardEdit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/CardList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/CardList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/LibraryData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/LibraryData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/LoginOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/LoginOut.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/ManagerAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/ManagerAdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/ManagerDel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/ManagerDel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/ManagerEdit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/ManagerEdit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/ManagerList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/ManagerList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/RuleAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/RuleAdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/RuleDel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/RuleDel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/RuleEdit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/RuleEdit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/RuleList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/RuleList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/SortAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/SortAdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/SortDel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/SortDel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/SortEdit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/SortEdit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/SortList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/SortList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/admin/UpdatePassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/admin/UpdatePassword.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/manager/Announcement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/manager/Announcement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/manager/AnnouncementAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/manager/AnnouncementAdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/manager/AnnouncementDel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/manager/AnnouncementDel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/manager/AnnouncementEdit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/manager/AnnouncementEdit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/manager/BorrowTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/manager/BorrowTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/manager/ManagerLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/manager/ManagerLogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/manager/Quit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/manager/Quit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/manager/ReturnTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/manager/ReturnTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/reader/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/reader/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/reader/Borrow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/reader/Borrow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/reader/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/reader/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/reader/Exit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/reader/Exit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/reader/Illegal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/reader/Illegal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/reader/Like.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/reader/Like.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library/loginReader.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/library/loginReader.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/reader/16myachievements.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/reader/16myachievements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/reader/20problem.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/reader/20problem.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,7 +207,7 @@
       <workItem from="1703511241690" duration="2128000" />
       <workItem from="1703559393640" duration="19167000" />
       <workItem from="1703584568864" duration="2042000" />
-      <workItem from="1703738082457" duration="3279000" />
+      <workItem from="1703738082457" duration="5895000" />
     </task>
     <task id="LOCAL-00001" summary="add my collections and my borrowing">
       <option name="closed" value="true" />

@@ -12,7 +12,7 @@
 
     <body>
         <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-        <div id="main" style="width:1200px;height:500px;"></div>
+        <div id="main" style="width:1500px;height:800px;"></div>
         <script type="text/javascript">
             // 基于准备好的dom，初始化echarts实例
             var myChart = echarts.init(document.getElementById('main'));
@@ -20,7 +20,7 @@
             // 指定图表的配置项和数据
             myChart.setOption({
                 title: {
-                    text: '做题情况'
+                    text: '我的做题'
                 },
                 tooltip: {
                     trigger: 'axis',
