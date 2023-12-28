@@ -58,7 +58,7 @@ li:hover .sub {
 
 
 		<li>
-			<a href="../search.html" target="view_frame" class="v1">未名搜索</a>
+			<a href="../search.html" target="view_frame" class="v1">搜索查询</a>
 			<!-- <dl class="sub">
 				<dd><a href="09couse.jsp" target="view_frame">课程查询</a></dd>
 				<dd><a href="05book.jsp" target="view_frame">图书查询</a></dd>
@@ -86,15 +86,16 @@ li:hover .sub {
 				<dd><a href="16myinformation.html" target="view_frame">我的账号</a></dd>
 				<dd><a href="16borrow.html" target="view_frame">我的借阅</a></dd>
 				<dd><a href="17friend.html" target="view_frame">我的好友</a></dd>
+				<dd><a href="20problem.jsp" target="view_frame">我的做题</a></dd>
 			</dl>
 		</li>
 		<li>
-			<a href="../community.html" target="view_frame" class="v1">交流讨论</a>
+			<a href="../community.html" target="view_frame" class="v1">讨论区</a>
 		
 		</li>
-		<!-- <li>
+		<li>
 			<a href="08illegalInfo.jsp" target="view_frame" class="v1">违章信息</a>
-		</li> -->
+		</li>
 
 		<li>
 			<a href="10reDirect.jsp" target="view_frame" class="v1">智能出题</a>

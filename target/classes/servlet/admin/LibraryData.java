@@ -22,9 +22,9 @@ import net.sf.json.JSONObject;
 @WebServlet("/admin/libraryData")
 public class LibraryData extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.setContentType("application/json; charset:utf8");
 		// 准备参数
 		Connection connection = null;
@@ -39,31 +39,31 @@ public class LibraryData extends HttpServlet {
 		String msg = "error";
 		int count = 0;
 		PrintWriter out = resp.getWriter();
-		
+
 		// 开始查询
 		try {
 			connection = Base.getConnection();
 			int i = 30;
 			// 获取30天
-			while(i!=0) {
+			while (i != 0) {
 				i--;
 				sql = "select count(*) as count from borrow_books where date_format(borrow_date,'%Y-%m-%d')=? order by id desc";
 				String date = DateTime.showDate(-i); // 设置日期
 				String md = DateTime.showMD(-i);
 				pstmt = connection.prepareStatement(sql);
-				pstmt.setString(1,date);
+				pstmt.setString(1, date);
 				resultSet = pstmt.executeQuery();
-				while(resultSet.next()) {
+				while (resultSet.next()) {
 					jsonData.add(resultSet.getString("count"));
 					jsonDays.add(md);
 				}
-			}	
+			}
 			jsonObject.put("data", jsonData);
 			jsonObject.put("days", jsonDays);
-			if(!jsonObject.isEmpty()) {
+			if (!jsonObject.isEmpty()) {
 				code = 0;
-				msg =  "查询成功";
-			}else {
+				msg = "查询成功";
+			} else {
 				msg = "数据为空";
 			}
 		} catch (ClassNotFoundException e) {
@@ -71,14 +71,14 @@ public class LibraryData extends HttpServlet {
 			e.printStackTrace();
 		} catch (SQLException e) {
 			msg = "sql错误";
-		}finally {
+		} finally {
 			try {
 				Base.closeResource(connection, pstmt, resultSet);
 			} catch (SQLException e) {
 				msg = "关闭失败";
 			}
 		}
-		out.print( Util.jsonResponse(code, msg, jsonObject.toString()) );
-    }
+		out.print(Util.jsonResponse(code, msg, jsonObject.toString()));
+	}
 
 }

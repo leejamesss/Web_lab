@@ -86,6 +86,7 @@ li:hover .sub {
 				<dd><a href="16myinformation.html" target="view_frame">我的账号</a></dd>
 				<dd><a href="16borrow.html" target="view_frame">我的借阅</a></dd>
 				<dd><a href="17friend.html" target="view_frame">我的好友</a></dd>
+				<dd><a href="20problem.jsp" target="view_frame">我的做题</a></dd>
 			</dl>
 		</li>
 		<li>
