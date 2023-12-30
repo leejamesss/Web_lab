@@ -149,21 +149,30 @@ font{
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="../public/image/1.jpg" alt="...">
+      <!-- <img src="../public/image/1.jpg" alt="..." link="https://www.lib.pku.edu.cn/2xxzzfw/26xwgg/261xwlb/a2d66d8612744f20b59d7d185d89b391.htm"> -->
+      <a href="https://www.lib.pku.edu.cn/2xxzzfw/26xwgg/261xwlb/a2d66d8612744f20b59d7d185d89b391.htm" target="_blank">
+        <img src="../public/image/1.jpg" alt="...">
+      </a>
       <div class="carousel-caption">
-		<font style="color:white;">芸台为梯 青云万里</font>
+		<font style="color:white;">“北京大学图书馆特藏文献丛刊”首批四种出版</font>
       </div>
     </div>
     <div class="item">
-      <img src="../public/image/2.jpg" alt="...">
+      <!-- <img src="../public/image/2.jpg" alt="..."> -->
+            <a href="http://hxqk.lib.pku.edu.cn/" target="_blank">
+              <img src="../public/image/2.png" alt="...">
+            </a>
       <div class="carousel-caption">
-		<font style="color:white;">新时代 新青年</font>
+		<font style="color:white;">《中文核心期刊要目总览》2023年版评价完成，点此订购</font>
       </div>
     </div>
 	<div class="item">
-      <img src="../public/image/3.jpg" alt="...">
+      <!-- <img src="../public/image/3.jpg" alt="..."> -->
+            <a href="https://www.lib.pku.edu.cn/hdrl/b46f7c5411e54b9a9130caaca67e8510.htm" target="_blank">
+              <img src="../public/image/4.jpg" alt="...">
+            </a>
       <div class="carousel-caption">
-		<font style="color:white;">钩沉拾遗 再探百年</font>
+		<font style="color:white;">展览｜芸台丹青：北京大学图书馆藏书画珍品展</font>
       </div>
     </div>
   </div>

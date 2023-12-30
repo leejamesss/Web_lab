@@ -1,3 +1,7 @@
+/**
+ * The ManagerFilter class is a Java servlet filter that checks if a user is a manager and redirects
+ * them to the login page if not.
+ */
 package filter;
 
 import java.io.IOException;

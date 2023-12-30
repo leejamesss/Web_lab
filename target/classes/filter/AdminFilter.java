@@ -1,3 +1,7 @@
+/**
+ * The AdminFilter class is a Java servlet filter that checks if a user is logged in as an
+ * administrator before allowing access to certain pages.
+ */
 package filter;
 
 import java.io.IOException;
@@ -21,16 +25,17 @@ public class AdminFilter implements Filter {
 
 	public void init(FilterConfig filterConfig) throws ServletException {
 
-    }
-	
-	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+	}
+
+	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+			throws IOException, ServletException {
 		HttpServletRequest req = (HttpServletRequest) request;
 		HttpSession session = req.getSession();
-		if(session == null || session.getAttribute("admin") == null) {
-			HttpServletResponse rep = (HttpServletResponse)response;
-			PrintWriter out =response.getWriter();
+		if (session == null || session.getAttribute("admin") == null) {
+			HttpServletResponse rep = (HttpServletResponse) response;
+			PrintWriter out = response.getWriter();
 			// iframe父页面直接跳转到登录界面
-			out.print("<script>window.parent.location.href='"+ req.getContextPath() +"/adminLogin.html'</script>");
+			out.print("<script>window.parent.location.href='" + req.getContextPath() + "/adminLogin.html'</script>");
 		}
 		chain.doFilter(request, response);
 	}
