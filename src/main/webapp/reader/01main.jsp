@@ -11,6 +11,9 @@
 <link href="../css/bootstrap.min.css" rel="stylesheet">
 <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
 <script src="../js/jquery.min.js"></script>
+
+
+
 <script src="../js/bootstrap.min.js"></script>
     <style>
         #video-container {
@@ -96,6 +99,18 @@ font{
     height: 100%;
     object-fit: cover; /* Scale the video to cover the container */
 }
+  </style>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+  
+    .home_box {
+      margin-top: auto;
+    }
   </style>
 </head>
 <body>
@@ -187,5 +202,8 @@ font{
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+
+
 </body>
 </html>

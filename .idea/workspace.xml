@@ -11,34 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="76e0d0e5-2b9a-4ca5-aa49-de8a999db5fc" name="Changes" comment="add my collections and my borrowing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatTests" beforeDir="false" afterPath="$PROJECT_DIR$/chatTests" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatTests/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/chatTests/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatTests/src/libs/gpt.ts" beforeDir="false" afterPath="$PROJECT_DIR$/chatTests/src/libs/gpt.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatTests/src/views/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/chatTests/src/views/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/filter/AdminFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filter/AdminFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/filter/CharacterEncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filter/CharacterEncodingFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/filter/ManagerFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filter/ManagerFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/filter/XSSFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filter/XSSFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/public/image/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/public/image/1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/reader/01main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/reader/01main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filter/AdminFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filter/AdminFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filter/AdminFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filter/AdminFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filter/CharacterEncodingFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filter/CharacterEncodingFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filter/CharacterEncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filter/CharacterEncodingFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filter/ManagerFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filter/ManagerFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filter/ManagerFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filter/ManagerFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filter/XSSFilter$Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filter/XSSFilter$Request.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filter/XSSFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filter/XSSFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filter/XSSFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filter/XSSFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library/WEB-INF/classes/filter/AdminFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/library/WEB-INF/classes/filter/AdminFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library/WEB-INF/classes/filter/AdminFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/library/WEB-INF/classes/filter/AdminFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library/WEB-INF/classes/filter/CharacterEncodingFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/library/WEB-INF/classes/filter/CharacterEncodingFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library/WEB-INF/classes/filter/CharacterEncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/library/WEB-INF/classes/filter/CharacterEncodingFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library/WEB-INF/classes/filter/ManagerFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/library/WEB-INF/classes/filter/ManagerFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library/WEB-INF/classes/filter/ManagerFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/library/WEB-INF/classes/filter/ManagerFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library/WEB-INF/classes/filter/XSSFilter$Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/library/WEB-INF/classes/filter/XSSFilter$Request.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library/WEB-INF/classes/filter/XSSFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/library/WEB-INF/classes/filter/XSSFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library/WEB-INF/classes/filter/XSSFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/library/WEB-INF/classes/filter/XSSFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library/reader/01main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/library/reader/01main.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +209,7 @@
       <workItem from="1703738082457" duration="5895000" />
       <workItem from="1703766391445" duration="139000" />
       <workItem from="1703771841655" duration="1213000" />
-      <workItem from="1703945859462" duration="975000" />
+      <workItem from="1703945859462" duration="4568000" />
     </task>
     <task id="LOCAL-00001" summary="add my collections and my borrowing">
       <option name="closed" value="true" />
