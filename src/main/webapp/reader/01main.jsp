@@ -1,3 +1,4 @@
+<%@ page import="java.sql.*" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -26,12 +27,12 @@
 
 .showCarousel{
 	/* margin-top:2%; */
-    position: fixed; /* Fix the position */
+    position: relative; /* Fix the position */
     top: 0; /* Align with the top of the page */
     left: 0; /* Align with the left of the page */
     width: 100%; /* Set the width to 100% of the page */
     height: 100%; /* Set the height to 100% of the page */
-    z-index: -1; /* Place the carousel behind other content */
+    z-index: 100; /* Place the carousel before other content */
 }
 .showCarousel .carousel-inner,
 .showCarousel .carousel-inner > .item {
@@ -84,7 +85,7 @@ font{
     }
 
 #video-container {
-    position: fixed; /* Fix the position */
+    position: fixed; /*  the position */
     top: 0; /* Align with the top of the page */
     left: 0; /* Align with the left of the page */
     width: 100%; /* Set the width to 100% of the page */
@@ -120,15 +121,27 @@ font{
 </div>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const videoContainer = document.getElementById("video-container");
-      if (videoContainer) {
-        videoContainer.style.display = "block";
-        videoContainer.classList.add("fade-in");
-      }
+  document.addEventListener("DOMContentLoaded", function () {
+    const videoContainer = document.getElementById("video-container");
+    if (videoContainer) {
+      videoContainer.style.display = "block";
+      videoContainer.classList.add("fade-in");
+    }
 
     const video = document.querySelector("video");
-    video.addEventListener("ended", function() {
+    video.addEventListener("play", function () {
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+      } else if (video.mozRequestFullScreen) { /* Firefox */
+        video.mozRequestFullScreen();
+      } else if (video.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+        video.webkitRequestFullscreen();
+      } else if (video.msRequestFullscreen) { /* IE/Edge */
+        video.msRequestFullscreen();
+      }
+    });
+
+    video.addEventListener("ended", function () {
       video.pause();
       videoContainer.style.display = "none";
       videoContainer.classList.add("fade-out");
@@ -137,7 +150,7 @@ font{
       home.style.display = "block";
       home.classList.add("fade-in");
     });
-    });
+  });
 
 </script>
 <%
@@ -202,6 +215,56 @@ font{
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+
+
+<div class="news-block"
+  style="position: relative; z-index: 1; width:96%; margin: 20px auto; padding: 20px; background-color: #f8f9fa; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+  <h2 style="margin-bottom: 20px; text-align: center; color: #333; font-size: 24px; font-weight: 600;">最新动态</h2>
+  
+    <a href="https://www.lib.pku.edu.cn/2xxzzfw/26xwgg/261xwlb/983d8043c2a74c80a9cda554da92b210.htm"
+      style="text-decoration: none; color: inherit; position: relative; z-index: 2;">
+    <div class="news-item"
+      style="margin-bottom: 20px; padding: 10px; background-color: #fff; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+      <h3 style="margin-bottom: 10px; color: #333; font-size: 20px; font-weight: 500;">“走近中国书法”第十五讲举行，朱培尔主讲“我们有过怎样的书法传统”</h3>
+      <p style="color: #666; font-size: 16px; line-height: 1.6;">由北京大学图书馆推出的“走近中国书法系列讲座”第十五场讲座在图书馆南配楼艺术鉴赏厅举行。</p>
+    </div>
+  </a>
+
+
+  <a href="https://www.lib.pku.edu.cn/2xxzzfw/26xwgg/261xwlb/5d90b9a045e747b9ad2419cd122403fa.htm"
+    style="text-decoration: none; color: inherit; position: relative; z-index: 2;">
+  <div class="news-item"
+    style="margin-bottom: 20px; padding: 10px; background-color: #fff; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    <h3 style="margin-bottom: 10px; color: #333; font-size: 20px; font-weight: 500;">“数学之美”第五讲举行，马翔主讲“透视与射影——几何学帮你欣赏诗和远方的风景</h3>
+    <p style="color: #666; font-size: 16px; line-height: 1.6;">由北京大学图书馆和数学科学学院联合主办的“学科之美系列讲座——数学之美”第五场讲座在图书馆南配楼艺术鉴赏厅举行</p>
+  </div>
+</a>
+
+</div>
+
+
+<div class="announcement-block"
+  style="position: relative; z-index: -99; width:96%; margin: 20px auto; padding: 20px; background-color: #f8f9fa; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+  <h2 style="margin-bottom: 20px; text-align: center; color: #333; font-size: 24px; font-weight: 600;">近期公告</h2>
+
+  <jsp:useBean id="check" scope="session" class="javabean.JDBCBean"></jsp:useBean>
+  <% String sql="select * from announcement" ; ResultSet rs=check.executeQuery(sql); while (rs.next()) { %>
+    <div class="announcement-item"
+      style="margin-bottom: 20px; padding: 20px; background-color: #fff; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+      <h3 style="margin-bottom: 10px; color: #333; font-size: 20px; font-weight: 500;">
+        <%=rs.getString("TITLE") %>
+      </h3>
+      <p style="color: #666; font-size: 16px; line-height: 1.6;">
+        <%=rs.getString("DETAIL") %>
+      </p>
+      <p style="color: #666; font-size: 16px; line-height: 1.6;">发布日期：<%=rs.getString("PUBLISH_DATE") %>
+      </p>
+    </div>
+    <% } %>
+
+      <!-- Add more announcement items as needed -->
+</div> 
 
 
 
