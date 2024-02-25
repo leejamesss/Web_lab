@@ -10,10 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76e0d0e5-2b9a-4ca5-aa49-de8a999db5fc" name="Changes" comment="add my collections and my borrowing">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_12_24_20_39_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_12_24_20_39__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/reader/01main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/reader/01main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/reader/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library/reader/01main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/library/reader/01main.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,6 +211,8 @@
       <workItem from="1703771841655" duration="1213000" />
       <workItem from="1703945859462" duration="4568000" />
       <workItem from="1703988412448" duration="2665000" />
+      <workItem from="1704423623928" duration="4635000" />
+      <workItem from="1705393042593" duration="2217000" />
     </task>
     <task id="LOCAL-00001" summary="add my collections and my borrowing">
       <option name="closed" value="true" />
